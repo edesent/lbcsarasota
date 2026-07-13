@@ -1,0 +1,79 @@
+import Link from "next/link";
+import AnimateOnScroll from "./AnimateOnScroll";
+
+export default function Welcome() {
+  return (
+    <section
+      id="welcome"
+      className="relative z-10 -mt-28 md:-mt-44 bg-warm-white rounded-t-[2.5rem] md:rounded-t-[3.5rem] shadow-[0_-24px_50px_rgba(11,39,64,0.25)] pt-20 md:pt-24 pb-24 md:pb-28"
+    >
+      <div className="max-w-7xl mx-auto px-6">
+        <div className="grid lg:grid-cols-[1fr_0.9fr] gap-12 lg:gap-16 items-center">
+          {/* Text */}
+          <AnimateOnScroll>
+            <div>
+              <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-gold-dark mb-3">
+                A Warm Welcome
+              </span>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-text-dark leading-snug mb-6">
+                Come As You Are &mdash; <em className="text-brown-light italic">You&rsquo;re Family Here.</em>
+              </h2>
+              <p className="text-lg text-text-body leading-relaxed mb-5">
+                When you come to Liberty, you&rsquo;ll feel like you&rsquo;ve been to an
+                old-fashioned, gospel-preaching church. We sing the great hymns of the faith,
+                we preach from the King James Bible, and we welcome you the moment you walk
+                through the doors.
+              </p>
+              <p className="text-lg text-text-body leading-relaxed mb-8">
+                Our church family is led by <strong className="text-text-dark font-semibold">Pastor
+                Anthony &amp; Alaina Aiken</strong>, who joined Liberty Baptist Church in 2026.
+                Whether you&rsquo;re exploring faith for the first time or looking for a church
+                home, there&rsquo;s a warm seat waiting for you this Sunday.
+              </p>
+
+              <div className="flex flex-wrap gap-4">
+                <a
+                  href="#services"
+                  className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light hover:bg-brown hover:border-brown hover:-translate-y-0.5 hover:shadow-lg transition-all"
+                >
+                  Plan Your Visit
+                </a>
+                <Link
+                  href="/staff"
+                  className="inline-block text-brown-light font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light/40 hover:border-brown-light hover:-translate-y-0.5 transition-all"
+                >
+                  Meet Our Pastor
+                </Link>
+              </div>
+
+              <p className="mt-8 text-sm text-text-light">
+                <span className="font-semibold text-gold-dark">Est. 1978</span> &middot; Founded by
+                Dr. Gary Jackson &middot; Serving Sarasota for over 45 years
+              </p>
+            </div>
+          </AnimateOnScroll>
+
+          {/* Photo — the Aiken family */}
+          <AnimateOnScroll delay={150}>
+            <figure className="relative">
+              <div className="rounded-2xl overflow-hidden shadow-xl aspect-[4/5]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/pastor-family.jpg"
+                  alt="Pastor Anthony and Alaina Aiken and their family"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              <figcaption className="absolute -bottom-4 left-4 right-4 md:left-6 md:right-auto bg-brown-deep text-white rounded-xl px-5 py-3 shadow-lg">
+                <p className="font-serif text-lg font-semibold leading-tight">The Aiken Family</p>
+                <p className="text-xs tracking-[0.15em] uppercase text-gold-light mt-0.5">
+                  Our Pastor &amp; His Family
+                </p>
+              </figcaption>
+            </figure>
+          </AnimateOnScroll>
+        </div>
+      </div>
+    </section>
+  );
+}
