@@ -17,9 +17,9 @@ const facts = [
       "We accept Step Up For Students scholarship funding, which puts a Christian education within reach for many Florida families.",
   },
   {
-    label: "Flag Football Champions",
+    label: "Go Hawks",
     detail:
-      "Our teams compete — and win. Athletics, competition, and student life are a real part of the LBA experience.",
+      "LBA Hawks athletics play out of our own gym — and our flag football team are champions.",
   },
 ];
 
@@ -29,7 +29,7 @@ export default function Academy() {
       <div className="max-w-7xl mx-auto px-6">
         <AnimateOnScroll>
           <div className="relative overflow-hidden rounded-3xl bg-warm-white border border-cream-dark shadow-sm">
-            {/* Teal spine */}
+            {/* Sky-blue spine */}
             <div className="absolute inset-y-0 left-0 w-1.5 bg-gradient-to-b from-gold via-gold-light to-gold" />
 
             <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 lg:gap-14 p-9 md:p-12 lg:p-14">
@@ -42,7 +42,7 @@ export default function Academy() {
                   Liberty Baptist Academy
                 </h2>
                 <p className="text-sm font-semibold tracking-[0.15em] uppercase text-text-light mb-6">
-                  LBA Sarasota &middot; A Ministry of Liberty Baptist Church
+                  LBA Sarasota &middot; Home of the Hawks
                 </p>
 
                 <p className="text-lg text-text-body leading-relaxed mb-5">
@@ -52,7 +52,7 @@ export default function Academy() {
                   it&rsquo;s the foundation of the whole school day.
                 </p>
 
-                {/* Enrollment status — the hook */}
+                {/* Enrollment cap — the hook */}
                 <div className="rounded-2xl bg-brown-deep text-white p-6 md:p-7 mb-7">
                   <div className="flex items-baseline gap-4 mb-2">
                     <p className="font-serif text-5xl font-bold text-gold-light leading-none">
@@ -60,17 +60,18 @@ export default function Academy() {
                     </p>
                     <div>
                       <p className="text-xs font-bold tracking-[0.18em] uppercase text-gold-light/80">
-                        Students Enrolled
+                        Student Enrollment Cap
                       </p>
                       <p className="text-sm font-semibold text-white">
-                        We&rsquo;re at capacity for this school year.
+                        Small classes, on purpose.
                       </p>
                     </div>
                   </div>
                   <p className="text-sm text-white/70 leading-relaxed">
-                    Enrollment is capped so class sizes stay small &mdash; but our waiting list is
-                    open, and seats do come available. Get your family&rsquo;s name on it and
-                    we&rsquo;ll call you the moment one does.
+                    We cap enrollment at 37 so no child gets lost in a crowd. That means seats
+                    are limited &mdash; but our waiting list is open, and spots do come
+                    available. Get your family&rsquo;s name on it and we&rsquo;ll call you the
+                    moment one does.
                   </p>
                 </div>
 
@@ -90,8 +91,17 @@ export default function Academy() {
                 </div>
               </div>
 
-              {/* Facts */}
+              {/* Photo + facts */}
               <div className="lg:pl-4">
+                <figure className="rounded-2xl overflow-hidden shadow-md mb-7 aspect-[4/3]">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/academy-gym.jpg"
+                    alt="The LBA Hawks gym during a Liberty Baptist Academy event"
+                    className="w-full h-full object-cover"
+                  />
+                </figure>
+
                 <div className="divide-y divide-cream-dark border-y border-cream-dark">
                   {facts.map((f) => (
                     <div key={f.label} className="py-5">

@@ -24,11 +24,14 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-white/[.08]">
           {/* Brand */}
           <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
-            <div className="flex items-center gap-2.5 mb-5">
-              <svg className="w-6 h-6 flex-shrink-0 text-gold-light" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <rect x="10.5" y="2.5" width="3" height="19" rx="1" />
-                <rect x="6" y="7.5" width="12" height="3" rx="1" />
-              </svg>
+            <div className="flex items-center gap-3 mb-5">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/logo-white.png"
+                alt=""
+                aria-hidden="true"
+                className="w-11 h-11 flex-shrink-0"
+              />
               <span className="font-serif text-xl font-bold tracking-tight leading-none text-white">
                 Liberty Baptist <span className="text-gold-light">Church</span>
               </span>

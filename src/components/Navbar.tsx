@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import PlanVisitModal from "./PlanVisitModal";
 
 const navLinks = [
   { href: "#welcome", label: "About" },
@@ -59,10 +60,15 @@ export default function Navbar() {
           className="flex items-center gap-2.5 text-white"
           aria-label="Liberty Baptist Church — Home"
         >
-          <svg className="w-6 h-6 flex-shrink-0 text-gold-light" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <rect x="10.5" y="2.5" width="3" height="19" rx="1" />
-            <rect x="6" y="7.5" width="12" height="3" rx="1" />
-          </svg>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo-white.png"
+            alt=""
+            aria-hidden="true"
+            className={`flex-shrink-0 transition-all duration-300 ${
+              scrolled || isSubPage ? "w-9 h-9" : "w-11 h-11"
+            }`}
+          />
           <span className="font-serif text-lg sm:text-xl font-bold tracking-tight leading-none">
             Liberty Baptist <span className="text-gold-light">Church</span>
           </span>
@@ -82,13 +88,11 @@ export default function Navbar() {
             </li>
           ))}
           <li className="ml-2">
-            <a
-              href="#contact"
-              onClick={(e) => handleLinkClick(e, "#contact")}
-              className="bg-gold text-brown-deep text-sm font-semibold px-6 py-2.5 rounded-full hover:bg-gold-light hover:-translate-y-0.5 transition-all"
-            >
-              Plan a Visit
-            </a>
+            <PlanVisitModal
+              label="Plan a Visit"
+              variant="accent"
+              className="px-6 py-2.5 normal-case tracking-normal"
+            />
           </li>
         </ul>
 
@@ -133,14 +137,12 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="mt-4">
-              <a
-                href="#contact"
-                onClick={(e) => handleLinkClick(e, "#contact")}
-                className="block text-center bg-gold text-brown-deep font-semibold px-6 py-3 rounded-full hover:bg-gold-light transition-all"
-              >
-                Plan a Visit
-              </a>
+            <li className="mt-4" onClick={() => setMenuOpen(false)}>
+              <PlanVisitModal
+                label="Plan a Visit"
+                variant="accent"
+                className="w-full text-center px-6 py-3 normal-case tracking-normal"
+              />
             </li>
           </ul>
         </div>

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
+import PlanVisitModal from "./PlanVisitModal";
 
 export default function Welcome() {
   return (
@@ -33,12 +34,7 @@ export default function Welcome() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <a
-                  href="#services"
-                  className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light hover:bg-brown hover:border-brown hover:-translate-y-0.5 hover:shadow-lg transition-all"
-                >
-                  Plan Your Visit
-                </a>
+                <PlanVisitModal variant="primary" className="px-8 py-3.5" />
                 <Link
                   href="/staff"
                   className="inline-block text-brown-light font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light/40 hover:border-brown-light hover:-translate-y-0.5 transition-all"

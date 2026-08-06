@@ -1,4 +1,5 @@
 import AnimateOnScroll from "./AnimateOnScroll";
+import PlanVisitModal from "./PlanVisitModal";
 
 const services = [
   {
@@ -97,12 +98,7 @@ export default function ServiceTimes() {
 
         <AnimateOnScroll delay={300}>
           <div className="text-center mt-12">
-            <a
-              href="#contact"
-              className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full border-2 border-brown-light hover:bg-brown hover:border-brown hover:-translate-y-0.5 hover:shadow-lg transition-all"
-            >
-              Let Us Know You&rsquo;re Coming
-            </a>
+            <PlanVisitModal variant="primary" className="px-9 py-3.5" label="Let Us Know You’re Coming" />
           </div>
         </AnimateOnScroll>
       </div>

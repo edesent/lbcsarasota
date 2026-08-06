@@ -65,7 +65,6 @@ const academySchema = {
     "Liberty Baptist Academy is a small Christian school in Sarasota, Florida, and a ministry of Liberty Baptist Church. Accelerated Christian Education (A.C.E.) curriculum with Abeka kindergarten, ACE-trained faculty, and Step Up For Students scholarship funding accepted.",
   telephone: "+1-941-371-8239",
   email: "office@lbcsarasota.com",
-  numberOfStudents: 37,
   parentOrganization: { "@type": "Church", name: "Liberty Baptist Church" },
   address: {
     "@type": "PostalAddress",

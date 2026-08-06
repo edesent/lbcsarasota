@@ -13,32 +13,35 @@ export async function POST(request: Request) {
     return Response.json({ success: true });
   }
 
-  const firstName = String(body.first_name ?? "").trim();
-  const lastName = String(body.last_name ?? "").trim();
+  const name = String(body.name ?? "").trim();
   const email = String(body.email ?? "").trim();
   const phone = String(body.phone ?? "").trim();
-  const message = String(body.message ?? "").trim();
+  const service = String(body.service ?? "").trim();
+  const partySize = String(body.party_size ?? "").trim();
+  const kids = String(body.kids ?? "").trim();
+  const notes = String(body.notes ?? "").trim();
 
-  if (!firstName || !email || !message) {
+  if (!name || !email) {
     return Response.json(
-      { error: "Please fill in your name, email, and message." },
+      { error: "Please give us your name and email so we can look for you." },
       { status: 400 }
     );
   }
 
-  const fullName = `${firstName} ${lastName}`.trim();
-
   const result = await notifyChurch({
-    emoji: "✉️",
-    kind: "Website Message",
-    headline: `New message from ${fullName}`,
+    emoji: "🙋",
+    kind: "Plan a Visit",
+    headline: `${name} is planning a visit`,
     replyTo: email,
     fields: [
-      { label: "Name", value: fullName },
+      { label: "Name", value: name },
       { label: "Email", value: email },
       { label: "Phone", value: phone },
+      { label: "Service they're coming to", value: service },
+      { label: "How many coming", value: partySize },
+      { label: "Kids & ages", value: kids },
     ],
-    body: { label: "Message", value: message },
+    body: { label: "Anything we should know", value: notes },
   });
 
   if (!result.ok) {

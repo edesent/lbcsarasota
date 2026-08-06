@@ -41,8 +41,16 @@ export default function SignatureEvents() {
 
         {/* Featured — the Car Show */}
         <AnimateOnScroll>
-          <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brown via-brown-deep to-burgundy-dark p-9 md:p-14 shadow-xl mb-6 md:mb-8">
-            <div className="absolute -top-20 -right-16 w-80 h-80 rounded-full bg-gold/10 blur-3xl" />
+          <div className="relative overflow-hidden rounded-3xl bg-brown-deep p-9 md:p-14 shadow-xl mb-6 md:mb-8">
+            {/* Real photo from last year's show */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/car-show.jpg"
+              alt="Classic cars lined up on the Liberty Baptist Church lot for the annual car show"
+              className="absolute inset-0 w-full h-full object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-brown-deep/95 via-brown-deep/85 to-brown-deep/60" />
+            <div className="absolute inset-0 bg-gradient-to-t from-brown-deep/80 via-transparent to-brown-deep/30" />
 
             <div className="relative grid lg:grid-cols-[1.15fr_0.85fr] gap-8 lg:gap-14 items-center">
               <div>

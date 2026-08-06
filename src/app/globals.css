@@ -4,32 +4,33 @@
   --font-sans: var(--font-lato);
   --font-serif: var(--font-playfair);
 
-  /* Liberty Baptist Church, Sarasota FL — deep Gulf navy + bright coastal
-     teal + cool cream. The palette echoes our sanctuary (teal seating) and
-     the Florida sky. Token names are kept from the base template; only the
-     values change so the whole site re-skins without touching classes. */
+  /* Liberty Baptist Church, Sarasota FL — sampled straight from the church's
+     own liberty-bell logo and website banner: deep royal navy #002760, logo
+     navy #053887, and the bell's sky blue #3ebae3. Token names are kept from
+     the base template; only the values change so the whole site re-skins
+     without touching classes. */
 
-  /* Teal accent family (replaces "gold") */
-  --color-gold: #2bb3d6;        /* bright brand teal — primary accent / buttons */
-  --color-gold-light: #6fd0e6;  /* lighter teal — accent text on dark navy */
-  --color-gold-dark: #0d6b89;   /* deep teal — small eyebrow labels on light */
+  /* Sky-blue accent family, from the bell highlight (replaces "gold") */
+  --color-gold: #3ebae3;        /* brand sky blue — primary accent / buttons */
+  --color-gold-light: #7ed3f0;  /* lighter sky — accent text on deep navy */
+  --color-gold-dark: #0a6486;   /* deep sky — small eyebrow labels on light */
 
   /* Cool light neutrals (replaces "cream") */
-  --color-cream: #eef3f6;
-  --color-cream-dark: #dde7ec;
-  --color-warm-white: #f9fcfd;
+  --color-cream: #eef3f7;
+  --color-cream-dark: #dbe5ee;
+  --color-warm-white: #f9fbfd;
 
-  /* Navy family (replaces "brown") */
-  --color-brown-deep: #0b2740;  /* deep navy — dark sections / hero */
-  --color-brown: #123a5c;       /* navy */
-  --color-brown-light: #1c5180; /* medium navy — accent text / secondary buttons */
-  --color-burgundy: #0e4d63;    /* deep teal-navy */
-  --color-burgundy-dark: #08394c;
+  /* Royal navy family, from the logo + banner (replaces "brown") */
+  --color-brown-deep: #002760;  /* banner navy — dark sections / hero */
+  --color-brown: #053887;       /* logo navy */
+  --color-brown-light: #0b57b8; /* royal blue — links / secondary buttons */
+  --color-burgundy: #063a72;
+  --color-burgundy-dark: #02224f;
 
-  --color-text-dark: #122c43;
-  --color-text-body: #3c4a57;
-  --color-text-light: #66747f;
-  --color-text-muted: #95a1ab;
+  --color-text-dark: #0d2645;
+  --color-text-body: #3b4859;
+  --color-text-light: #64717f;
+  --color-text-muted: #93a0ac;
 }
 
 html {
