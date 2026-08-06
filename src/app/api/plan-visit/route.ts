@@ -1,4 +1,4 @@
-import { notifyChurch } from "@/lib/notify";
+import { sendToSlack } from "@/lib/slack-form";
 
 export async function POST(request: Request) {
   let body: Record<string, unknown>;
@@ -28,20 +28,16 @@ export async function POST(request: Request) {
     );
   }
 
-  const result = await notifyChurch({
-    emoji: "🙋",
-    kind: "Plan a Visit",
-    headline: `${name} is planning a visit`,
-    replyTo: email,
+  const result = await sendToSlack({
+    subject: "🙌 Someone is planning a visit",
+    name,
+    contact: [email, phone].filter(Boolean).join(" · "),
     fields: [
-      { label: "Name", value: name },
-      { label: "Email", value: email },
-      { label: "Phone", value: phone },
-      { label: "Service they're coming to", value: service },
-      { label: "How many coming", value: partySize },
-      { label: "Kids & ages", value: kids },
+      ["Service", service],
+      ["How many coming", partySize],
+      ["Kids & ages", kids],
     ],
-    body: { label: "Anything we should know", value: notes },
+    message: notes,
   });
 
   if (!result.ok) {

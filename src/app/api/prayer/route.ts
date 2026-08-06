@@ -1,4 +1,4 @@
-import { notifyChurch } from "@/lib/notify";
+import { sendToSlack } from "@/lib/slack-form";
 
 export async function POST(request: Request) {
   let body: Record<string, unknown>;
@@ -25,22 +25,12 @@ export async function POST(request: Request) {
     );
   }
 
-  const result = await notifyChurch({
-    emoji: isPrivate ? "🔒" : "🙏",
-    kind: "Prayer Request",
-    headline: isPrivate
-      ? `Private prayer request from ${name} — pastor only`
-      : `Prayer request from ${name}`,
-    replyTo: email,
-    fields: [
-      { label: "Name", value: name },
-      { label: "Email", value: email },
-      {
-        label: "Privacy",
-        value: isPrivate ? "🔒 PRIVATE — for the pastor only" : "May be shared with the prayer list",
-      },
-    ],
-    body: { label: "Prayer Request", value: request_text },
+  const result = await sendToSlack({
+    subject: isPrivate ? "🔒 Private prayer request" : "🙏 New prayer request",
+    name,
+    contact: email,
+    fields: isPrivate ? [["Privacy", "PRIVATE — for the pastor only"]] : [],
+    message: request_text,
   });
 
   if (!result.ok) {

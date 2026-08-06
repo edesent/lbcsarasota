@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
-import ChatWidget from "@/components/ChatWidget";
+import Script from "next/script";
+import { CHAT } from "@/config/chat";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -123,7 +124,12 @@ export default function RootLayout({
     >
       <body className="min-h-screen flex flex-col">
         {children}
-        <ChatWidget />
+        <Script
+          src={`${CHAT.origin}/widget/wbc-chat.js`}
+          data-api={CHAT.origin}
+          data-key={CHAT.apiKey}
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
