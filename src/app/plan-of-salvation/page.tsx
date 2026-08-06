@@ -6,11 +6,11 @@ import SubpageHero from "@/components/SubpageHero";
 export const metadata: Metadata = {
   title: "The Bible Way to Heaven",
   description:
-    "How to be saved — the Gospel of Jesus Christ explained from the King James Bible at Liberty Baptist Church, Sarasota, Florida.",
+    "How to be saved — the Gospel of Jesus Christ explained simply, straight from the Bible, at Liberty Baptist Church in Sarasota, Florida.",
   alternates: { canonical: "/plan-of-salvation" },
   openGraph: {
     title: "The Bible Way to Heaven | Liberty Baptist Church",
-    description: "How to be saved — the Gospel from the King James Bible.",
+    description: "How to be saved — the Gospel explained simply from the Bible.",
     url: "/plan-of-salvation",
     type: "article",
   },

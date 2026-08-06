@@ -6,11 +6,11 @@ import SubpageHero from "@/components/SubpageHero";
 export const metadata: Metadata = {
   title: "What We Believe",
   description:
-    "The doctrinal statement of Liberty Baptist Church in Sarasota, Florida — the historic truths of the faith we hold and preach from the King James Bible.",
+    "The doctrinal statement of Liberty Baptist Church in Sarasota, Florida — the historic truths of the faith we hold and preach.",
   alternates: { canonical: "/statement-of-faith" },
   openGraph: {
     title: "What We Believe | Liberty Baptist Church",
-    description: "The doctrines we hold and preach from the King James Bible.",
+    description: "The historic truths of the faith we hold and preach.",
     url: "/statement-of-faith",
     type: "article",
   },
@@ -117,7 +117,7 @@ export default function StatementOfFaithPage() {
         <SubpageHero
           eyebrow="What We Believe"
           title="Our Doctrinal Statement"
-          subtitle="The historic truths we hold and preach from the King James Bible"
+          subtitle="The historic truths of the faith we hold and preach"
         />
         <section className="py-24 bg-warm-white">
           <div className="max-w-3xl mx-auto px-6 space-y-10">

@@ -28,7 +28,7 @@ const expectations = [
   },
   {
     title: "Bible Preaching",
-    body: "Hymn singing, special music, and clear preaching from the King James Bible, followed by an invitation for anyone who'd like prayer.",
+    body: "Hymn singing, special music, and clear preaching straight from the Bible, followed by an invitation for anyone who'd like prayer.",
   },
   {
     title: "Come As You Are",

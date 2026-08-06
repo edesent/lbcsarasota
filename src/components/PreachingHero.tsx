@@ -32,7 +32,7 @@ export default function PreachingHero() {
           We&rsquo;re Here For You.
         </p>
         <p className="text-sm tracking-[0.18em] uppercase text-gold-light/90 mb-9 animate-fade-up animation-delay-900">
-          Old-fashioned, Bible preaching in the heart of Sarasota
+          Bible preaching &amp; a church family in the heart of Sarasota
         </p>
         <div className="flex gap-4 justify-start flex-wrap animate-fade-up animation-delay-1000">
           <a

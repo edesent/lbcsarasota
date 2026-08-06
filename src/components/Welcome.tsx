@@ -19,16 +19,17 @@ export default function Welcome() {
                 Come As You Are &mdash; <em className="text-brown-light italic">You&rsquo;re Family Here.</em>
               </h2>
               <p className="text-lg text-text-body leading-relaxed mb-5">
-                When you come to Liberty, you&rsquo;ll feel like you&rsquo;ve been to an
-                old-fashioned, gospel-preaching church. We sing the great hymns of the faith,
-                we preach from the King James Bible, and we welcome you the moment you walk
-                through the doors.
+                You don&rsquo;t have to know anybody, dress a certain way, or know your way
+                around a Bible to fit in here. We sing the great hymns of the faith, we open
+                the Scriptures and explain them plainly, and we&rsquo;ll welcome you the moment
+                you walk through the doors.
               </p>
               <p className="text-lg text-text-body leading-relaxed mb-8">
                 Our church family is led by <strong className="text-text-dark font-semibold">Pastor
                 Anthony &amp; Alaina Aiken</strong>, who joined Liberty Baptist Church in 2026.
-                Whether you&rsquo;re exploring faith for the first time or looking for a church
-                home, there&rsquo;s a warm seat waiting for you this Sunday.
+                Whether you&rsquo;re exploring faith for the very first time or looking for a
+                church home after years away, there&rsquo;s a warm seat waiting for you this
+                Sunday &mdash; and nobody will put you on the spot.
               </p>
 
               <div className="flex flex-wrap gap-4">

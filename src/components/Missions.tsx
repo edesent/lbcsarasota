@@ -1,7 +1,7 @@
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const stats = [
-  { value: "33", label: "Missionaries Supported" },
+  { value: "30+", label: "Missionaries Supported" },
   { value: "100+", label: "Countries Reached" },
   { value: "1978", label: "Sending the Gospel Since" },
 ];
@@ -23,8 +23,8 @@ export default function Missions() {
                 Taking the Gospel to <em className="text-gold-light italic">the World.</em>
               </h2>
               <p className="text-white/75 leading-relaxed mb-4">
-                Liberty Baptist Church partners with <strong className="text-white font-semibold">33
-                missionaries representing over 100 countries</strong>, praying for and supporting
+                Liberty Baptist Church partners with <strong className="text-white font-semibold">more
+                than 30 missionaries representing over 100 countries</strong>, praying for and supporting
                 them every single month. From Sarasota to the ends of the earth, we believe every
                 person deserves to hear the good news of Jesus Christ.
               </p>

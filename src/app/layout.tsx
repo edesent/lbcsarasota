@@ -19,7 +19,7 @@ const SITE_URL = "https://lbcsarasota.elijahdesent.com";
 const SITE_NAME = "Liberty Baptist Church";
 const SITE_TAGLINE = "We're Here For You";
 const SITE_DESCRIPTION =
-  "Liberty Baptist Church is an old-fashioned, King James Bible, gospel-preaching church family in Sarasota, Florida. Join us Sundays — Bible study groups at 9:00 AM and morning worship at 10:00 AM. We sing hymns, preach the Bible, and welcome you like family.";
+  "Liberty Baptist Church is a warm, Bible-preaching church family in Sarasota, Florida — and the home of Liberty Baptist Academy. Join us Sundays: Bible study groups at 9:00 AM and morning worship at 10:00 AM. We sing the great hymns, we explain the Scriptures plainly, and we welcome you like family.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -35,11 +35,15 @@ export const metadata: Metadata = {
     "Sarasota Florida church",
     "Independent Baptist church",
     "King James Bible church",
-    "KJV church Sarasota",
     "Bible-believing church near me",
-    "old-fashioned church Sarasota",
     "Sunday worship Sarasota",
     "Baptist church family",
+    "Liberty Baptist Academy",
+    "LBA Sarasota",
+    "Christian school Sarasota FL",
+    "private school Sarasota",
+    "Step Up For Students Sarasota",
+    "ACE school Sarasota",
   ],
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,

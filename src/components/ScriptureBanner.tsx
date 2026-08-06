@@ -17,7 +17,7 @@ export default function ScriptureBanner() {
               I was glad when they said unto me, Let us go into the house of the LORD.
             </p>
             <p className="text-sm font-semibold tracking-[0.25em] uppercase text-gold-light">
-              — Psalm 122:1 (KJV)
+              — Psalm 122:1
             </p>
           </div>
         </AnimateOnScroll>

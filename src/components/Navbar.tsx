@@ -4,13 +4,13 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
-  { href: "#home", label: "Home" },
   { href: "#welcome", label: "About" },
   { href: "#services", label: "Visit" },
   { href: "#groups", label: "Ministries" },
+  { href: "#academy", label: "Academy" },
+  { href: "/events", label: "Events" },
   { href: "/messages", label: "Sermons" },
   { href: "/give", label: "Give" },
-  { href: "#contact", label: "Contact" },
 ];
 
 export default function Navbar() {

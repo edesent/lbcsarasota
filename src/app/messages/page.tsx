@@ -8,11 +8,11 @@ import { getLiveStatus, getRecentVideos, youtube } from "@/lib/youtube";
 export const metadata: Metadata = {
   title: "Sermons & Messages",
   description:
-    "Watch and listen to sermons preached at Liberty Baptist Church in Sarasota, Florida. Old-fashioned, gospel preaching from the King James Bible.",
+    "Watch and listen to sermons preached at Liberty Baptist Church in Sarasota, Florida — clear, verse-by-verse preaching from the Bible.",
   alternates: { canonical: "/messages" },
   openGraph: {
     title: "Sermons & Messages | Liberty Baptist Church",
-    description: "Gospel preaching from the King James Bible.",
+    description: "Clear, verse-by-verse preaching from the Bible.",
     url: "/messages",
     type: "website",
   },
@@ -66,7 +66,7 @@ export default async function MessagesPage() {
           <SubpageHero
             eyebrow="Sermons"
             title="Watch & Listen"
-            subtitle="Verse-by-verse preaching from the King James Bible"
+            subtitle="Verse-by-verse preaching you can follow along with"
           />
         )}
 

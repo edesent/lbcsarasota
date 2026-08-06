@@ -3,6 +3,8 @@ const quickLinks = [
   { href: "#welcome", label: "About Us" },
   { href: "#services", label: "Plan a Visit" },
   { href: "#groups", label: "Ministries" },
+  { href: "#academy", label: "Liberty Baptist Academy" },
+  { href: "/events", label: "Church Calendar" },
   { href: "/messages", label: "Sermons" },
   { href: "/give", label: "Give Online" },
   { href: "/statement-of-faith", label: "What We Believe" },

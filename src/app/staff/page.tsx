@@ -8,7 +8,7 @@ import { staff, founder } from "@/lib/staff";
 export const metadata: Metadata = {
   title: "Our Pastor",
   description:
-    "Meet Pastor Anthony Aiken and the leadership of Liberty Baptist Church in Sarasota, Florida — an old-fashioned, King James Bible, gospel-preaching church.",
+    "Meet Pastor Anthony Aiken and the leadership of Liberty Baptist Church — a warm, Bible-preaching church family in Sarasota, Florida.",
   alternates: { canonical: "/staff" },
   openGraph: {
     title: "Our Pastor | Liberty Baptist Church",

@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Liberty Baptist Church",
     short_name: "Liberty Baptist",
     description:
-      "Liberty Baptist Church — an old-fashioned, King James Bible, gospel-preaching church family in Sarasota, Florida.",
+      "Liberty Baptist Church — a warm, Bible-preaching church family in Sarasota, Florida, and the home of Liberty Baptist Academy.",
     start_url: "/",
     display: "standalone",
     background_color: "#f9fcfd",
