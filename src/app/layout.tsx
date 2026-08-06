@@ -1,11 +1,13 @@
 import type { Metadata, Viewport } from "next";
-import { Playfair_Display, Lato } from "next/font/google";
+import { Source_Serif_4, Lato } from "next/font/google";
 import "./globals.css";
 import Script from "next/script";
 import { CHAT } from "@/config/chat";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+// Matches the church's own wordmark: a transitional serif with wedge serifs
+// and moderate stroke contrast — not the didone look of Playfair.
+const sourceSerif = Source_Serif_4({
+  variable: "--font-serif-display",
   subsets: ["latin"],
   display: "swap",
 });
@@ -120,7 +122,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${playfair.variable} ${lato.variable} antialiased`}
+      className={`${sourceSerif.variable} ${lato.variable} antialiased`}
     >
       <body className="min-h-screen flex flex-col">
         {children}

@@ -2,7 +2,7 @@
 
 @theme inline {
   --font-sans: var(--font-lato);
-  --font-serif: var(--font-playfair);
+  --font-serif: var(--font-serif-display);
 
   /* Liberty Baptist Church, Sarasota FL — sampled straight from the church's
      own liberty-bell logo and website banner: deep royal navy #002760, logo

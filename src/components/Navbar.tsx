@@ -62,16 +62,12 @@ export default function Navbar() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo-white.png"
-            alt=""
-            aria-hidden="true"
-            className={`flex-shrink-0 transition-all duration-300 ${
-              scrolled || isSubPage ? "w-9 h-9" : "w-11 h-11"
+            src="/logo-lockup-white.png"
+            alt="Liberty Baptist Church"
+            className={`w-auto transition-all duration-300 ${
+              scrolled || isSubPage ? "h-9" : "h-11 sm:h-12"
             }`}
           />
-          <span className="font-serif text-lg sm:text-xl font-bold tracking-tight leading-none">
-            Liberty Baptist <span className="text-gold-light">Church</span>
-          </span>
         </a>
 
         {/* Desktop Menu */}

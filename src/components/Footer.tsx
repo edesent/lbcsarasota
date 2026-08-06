@@ -24,17 +24,13 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 pb-16 border-b border-white/[.08]">
           {/* Brand */}
           <div className="flex flex-col items-center text-center sm:items-start sm:text-left">
-            <div className="flex items-center gap-3 mb-5">
+            <div className="mb-5">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/logo-white.png"
-                alt=""
-                aria-hidden="true"
-                className="w-11 h-11 flex-shrink-0"
+                src="/logo-lockup-white.png"
+                alt="Liberty Baptist Church"
+                className="h-14 w-auto"
               />
-              <span className="font-serif text-xl font-bold tracking-tight leading-none text-white">
-                Liberty Baptist <span className="text-gold-light">Church</span>
-              </span>
             </div>
             <p className="text-sm leading-relaxed">
               4249 Bahia Vista Street<br />
