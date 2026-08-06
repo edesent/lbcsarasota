@@ -1,4 +1,4 @@
-import { chatConfig, clean, signThread, slack } from "@/lib/chat";
+import { chatConfig, clean, mention, signThread, slack } from "@/lib/chat";
 
 export async function POST(request: Request) {
   const cfg = chatConfig();
@@ -32,14 +32,18 @@ export async function POST(request: Request) {
     );
   }
 
+  const ping = mention();
   const posted = await slack("chat.postMessage", cfg.token, {
     channel: cfg.channel,
-    text: `💬 New website chat from ${name}`,
+    text: `${ping ? `${ping} ` : ""}💬 New website chat from ${name}`,
     blocks: [
       {
         type: "header",
         text: { type: "plain_text", text: "💬 New website chat", emoji: true },
       },
+      ...(ping
+        ? [{ type: "section", text: { type: "mrkdwn", text: ping } }]
+        : []),
       {
         type: "section",
         fields: [

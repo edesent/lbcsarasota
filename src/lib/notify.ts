@@ -1,4 +1,5 @@
 import { escapeHtml, sendChurchEmail } from "./email";
+import { mention } from "./chat";
 
 // ── Where form submissions go ────────────────────────────────────────────────
 // Slack is the primary destination. Configure it EITHER way:
@@ -33,6 +34,7 @@ async function postToSlack(opts: {
   const webhook = process.env.SLACK_WEBHOOK_URL;
   if (!webhook && !(token && channel)) return false;
 
+  const ping = mention();
   const blocks: unknown[] = [
     {
       type: "header",
@@ -40,7 +42,7 @@ async function postToSlack(opts: {
     },
     {
       type: "section",
-      text: { type: "mrkdwn", text: `*${opts.headline}*` },
+      text: { type: "mrkdwn", text: `${ping ? `${ping} ` : ""}*${opts.headline}*` },
     },
   ];
 
@@ -67,7 +69,7 @@ async function postToSlack(opts: {
     elements: [{ type: "mrkdwn", text: "Sent from lbcsarasota.com" }],
   });
 
-  const fallbackText = `${opts.emoji} ${opts.headline}`;
+  const fallbackText = `${ping ? `${ping} ` : ""}${opts.emoji} ${opts.headline}`;
 
   try {
     // Bot token wins when both are configured — the channel stays changeable

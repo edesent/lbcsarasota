@@ -95,3 +95,12 @@ export async function slackGet(
 export function clean(value: unknown, max = 2000) {
   return String(value ?? "").trim().slice(0, max);
 }
+
+/**
+ * Slack mention for whoever should be pinged on a new chat or form, from
+ * SLACK_NOTIFY_USER_ID (a member id like U0BNN8RBQ8L). Empty when unset.
+ */
+export function mention() {
+  const id = process.env.SLACK_NOTIFY_USER_ID;
+  return id ? `<@${id}>` : "";
+}
