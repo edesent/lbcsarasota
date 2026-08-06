@@ -32,6 +32,10 @@ export default function MapAddress() {
                   <div>
                     <p className="text-xs font-bold tracking-[0.15em] uppercase text-text-light mb-0.5">Address</p>
                     <p className="text-text-dark font-medium">4249 Bahia Vista Street<br />Sarasota, FL 34232</p>
+                    <p className="text-sm text-text-light mt-1 leading-relaxed">
+                      On Bahia Vista at McIntosh Road &mdash; about a mile south of
+                      Fruitville &amp; McIntosh.
+                    </p>
                   </div>
                 </div>
 

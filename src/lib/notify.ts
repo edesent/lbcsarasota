@@ -1,9 +1,14 @@
 import { escapeHtml, sendChurchEmail } from "./email";
 
 // ── Where form submissions go ────────────────────────────────────────────────
-// Slack is the primary destination and works the day you paste the webhook in:
-// create an Incoming Webhook at https://api.slack.com/messaging/webhooks, then
-// save the URL as SLACK_WEBHOOK_URL on the hosting (never in a file).
+// Slack is the primary destination. Configure it EITHER way:
+//
+//   1. Bot token (preferred — lets you pick/change the channel by id)
+//        SLACK_BOT_TOKEN   xoxb-…  with the chat:write scope, app in the channel
+//        SLACK_CHANNEL_ID  C…      the channel messages land in
+//
+//   2. Incoming webhook (simplest — the channel is baked into the URL)
+//        SLACK_WEBHOOK_URL https://hooks.slack.com/services/…
 //
 // Email via Resend is the optional second copy. It only works once
 // lbcsarasota.com is verified in Resend, so a submission counts as delivered if
@@ -23,8 +28,10 @@ async function postToSlack(opts: {
   fields: NotifyField[];
   body?: NotifyField;
 }): Promise<boolean> {
+  const token = process.env.SLACK_BOT_TOKEN;
+  const channel = process.env.SLACK_CHANNEL_ID;
   const webhook = process.env.SLACK_WEBHOOK_URL;
-  if (!webhook) return false;
+  if (!webhook && !(token && channel)) return false;
 
   const blocks: unknown[] = [
     {
@@ -60,11 +67,33 @@ async function postToSlack(opts: {
     elements: [{ type: "mrkdwn", text: "Sent from lbcsarasota.com" }],
   });
 
+  const fallbackText = `${opts.emoji} ${opts.headline}`;
+
   try {
-    const res = await fetch(webhook, {
+    // Bot token wins when both are configured — the channel stays changeable
+    // without minting a new webhook.
+    if (token && channel) {
+      const res = await fetch("https://slack.com/api/chat.postMessage", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json; charset=utf-8",
+          Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({ channel, text: fallbackText, blocks }),
+      });
+      // Slack returns HTTP 200 even for API-level failures; check `ok`.
+      const json = (await res.json()) as { ok?: boolean; error?: string };
+      if (!json.ok) {
+        console.error("Slack chat.postMessage failed:", json.error);
+        return false;
+      }
+      return true;
+    }
+
+    const res = await fetch(webhook as string, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ text: `${opts.emoji} ${opts.headline}`, blocks }),
+      body: JSON.stringify({ text: fallbackText, blocks }),
     });
     if (!res.ok) {
       console.error("Slack webhook responded", res.status, await res.text());
@@ -72,7 +101,7 @@ async function postToSlack(opts: {
     }
     return true;
   } catch (err) {
-    console.error("Slack webhook failed:", err);
+    console.error("Slack delivery failed:", err);
     return false;
   }
 }

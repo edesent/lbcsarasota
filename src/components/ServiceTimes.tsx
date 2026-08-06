@@ -25,7 +25,7 @@ const services = [
 const expectations = [
   {
     title: "A Warm Welcome",
-    body: "Greeters meet you at the door and our Welcome Center has everything you need. You'll never be singled out or put on the spot.",
+    body: "Greeters meet you at the door, the Welcome Center has an information packet for you, and an usher will help you find a seat. You'll never be singled out or put on the spot.",
   },
   {
     title: "Bible Preaching",
