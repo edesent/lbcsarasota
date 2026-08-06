@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Playfair_Display, Lato } from "next/font/google";
 import "./globals.css";
+import ChatWidget from "@/components/ChatWidget";
 
 const playfair = Playfair_Display({
   variable: "--font-playfair",
@@ -84,8 +85,8 @@ export const metadata: Metadata = {
       "max-video-preview": -1,
     },
   },
-  // Favicon + touch icon are generated from app/icon.svg and app/apple-icon.svg
-  // by Next's file conventions — no explicit icons block needed.
+  // Favicon + touch icon are generated from app/icon.png and app/apple-icon.png
+  // (the church's liberty-bell mark) by Next's file conventions.
   appleWebApp: {
     capable: true,
     title: SITE_NAME,
@@ -104,8 +105,8 @@ export const viewport: Viewport = {
   initialScale: 1,
   maximumScale: 5,
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f9fcfd" },
-    { media: "(prefers-color-scheme: dark)", color: "#0b2740" },
+    { media: "(prefers-color-scheme: light)", color: "#f9fbfd" },
+    { media: "(prefers-color-scheme: dark)", color: "#002760" },
   ],
   colorScheme: "light",
 };
@@ -122,6 +123,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen flex flex-col">
         {children}
+        <ChatWidget />
       </body>
     </html>
   );
