@@ -49,11 +49,7 @@ export default function ServiceTimes() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark leading-snug">
               Join Us This <em className="text-brown-light italic">Week</em>
             </h2>
-            <p className="text-text-body mt-3 max-w-2xl mx-auto">
-              At Liberty Baptist you&rsquo;ll find a church family that loves the Lord and loves
-              people. Here&rsquo;s when we gather at 4249 Bahia Vista Street &mdash; and what to
-              expect when you visit.
-            </p>
+
           </div>
         </AnimateOnScroll>
 
