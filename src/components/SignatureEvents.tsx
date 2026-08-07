@@ -3,9 +3,9 @@ import AnimateOnScroll from "./AnimateOnScroll";
 
 const upcomingEvents = [
   {
-    label: "Friend Day",
+    label: "Community Day",
     detail:
-      "A special Sunday designed to make it easy to invite a friend, neighbor, coworker, or family member to worship with you at Liberty.",
+      "A special Sunday for our church family and community, with an easy opportunity to invite friends, neighbors, coworkers, and family members to worship with you at Liberty.",
   },
   {
     label: "Missions Conference",
