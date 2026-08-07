@@ -2,7 +2,21 @@ import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
 import PlanVisitModal from "./PlanVisitModal";
 
+function getYearsServing() {
+  const founded = { year: 1978, month: 8, day: 6 };
+  const today = new Date();
+  let years = today.getFullYear() - founded.year;
+  const beforeAnniversary =
+    today.getMonth() + 1 < founded.month ||
+    (today.getMonth() + 1 === founded.month && today.getDate() < founded.day);
+
+  if (beforeAnniversary) years -= 1;
+  return years;
+}
+
 export default function Welcome() {
+  const yearsServing = getYearsServing();
+
   return (
     <section
       id="welcome"
