@@ -1,4 +1,3 @@
-import PrayerModal from "./PrayerModal";
 import PlanVisitModal from "./PlanVisitModal";
 
 export default function PreachingHero() {
