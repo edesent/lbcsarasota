@@ -7,7 +7,7 @@ import PlanVisitModal from "./PlanVisitModal";
 const navLinks = [
   { href: "#welcome", label: "About" },
   { href: "#services", label: "Visit" },
-  { href: "#groups", label: "Ministries" },
+  { href: "/ministries", label: "Ministries" },
   { href: "#academy", label: "Academy" },
   { href: "/events", label: "Events" },
   { href: "/messages", label: "Sermons" },
