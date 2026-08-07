@@ -4,8 +4,8 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const ministries = [
   {
     label: "Small Groups",
-    photo: "/congregation.jpg",
-    alt: "Liberty Baptist Church family gathered together",
+    photo: "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/2RukBFfOmc2KfYONvFdXt4lZKwO3KUim/2026-07-12%2009.48.26-3-qAhFZnI6KcF0vUTGepQJT7ZiBS2oNv.jpeg",
+    alt: "Three ladies visiting together in the Liberty Baptist Church lobby",
     detail: "Age-appropriate groups for children, teens, and adults every Sunday at 9:00 AM, with practical Bible teaching and opportunities to build real relationships.",
   },
   {
