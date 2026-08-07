@@ -15,11 +15,10 @@ export default function Missions() {
           <div className="overflow-hidden rounded-3xl bg-gradient-to-br from-brown via-brown-deep to-burgundy-dark shadow-xl">
             <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
               <div className="relative min-h-[320px] lg:min-h-[560px] overflow-hidden bg-brown-deep">
-                {/* This will be replaced with the 2026 Missions Conference photo once it is uploaded through the site editor. */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/sanctuary.jpg"
-                  alt="Liberty Baptist Church gathered for worship in Sarasota"
+                  src="/2026-06-22-11-59-28.jpeg"
+                  alt="Liberty Baptist Church Missions Conference with international flags in the sanctuary"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brown-deep/55 via-transparent to-transparent lg:bg-gradient-to-r lg:from-transparent lg:to-brown-deep/30" />
