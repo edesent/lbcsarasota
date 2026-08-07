@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import SubpageHero from "@/components/SubpageHero";
 import SermonGrid from "@/components/SermonGrid";
+import ServiceCountdown from "@/components/ServiceCountdown";
 import { getLiveStatus, getRecentVideos, youtube } from "@/lib/youtube";
 
 export const metadata: Metadata = {
@@ -63,11 +63,27 @@ export default async function MessagesPage() {
             </div>
           </header>
         ) : (
-          <SubpageHero
-            eyebrow="Sermons"
-            title="Watch & Listen"
-            subtitle="Verse-by-verse preaching you can follow along with"
-          />
+          <header className="pt-36 pb-16 bg-brown-deep">
+            <div className="max-w-5xl mx-auto px-6 text-center">
+              <p className="text-xs font-bold tracking-[0.22em] uppercase text-gold-light mb-4">
+                Livestream
+              </p>
+              <h1 className="font-serif text-4xl md:text-6xl font-bold text-white leading-tight mb-8">
+                Watch <em className="text-gold-light italic">Online</em>
+              </h1>
+              <div className="max-w-3xl mx-auto bg-warm-white rounded-2xl p-6 md:p-8 mb-8">
+                <ServiceCountdown compact />
+              </div>
+              <a
+                href={`${youtube.channelUrl}/live`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block bg-gold text-brown-deep font-bold text-base tracking-wide uppercase px-10 py-4 rounded-full hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-lg transition-all"
+              >
+                Watch Now
+              </a>
+            </div>
+          </header>
         )}
 
         <section className="py-24 bg-cream">

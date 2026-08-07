@@ -1,4 +1,3 @@
-import PrayerModal from "./PrayerModal";
 import PlanVisitModal from "./PlanVisitModal";
 
 export default function PreachingHero() {
@@ -30,10 +29,10 @@ export default function PreachingHero() {
         </h1>
         <div className="w-20 h-[3px] bg-gold mb-6 rounded animate-fade-up animation-delay-600" />
         <p className="font-serif text-2xl md:text-3xl italic text-white leading-relaxed max-w-xl mb-3 animate-fade-up animation-delay-800">
-          We&rsquo;re Here For You.
+          Biblical Preaching. Compassionate Community. Reverent Worship.
         </p>
-        <p className="text-sm tracking-[0.18em] uppercase text-gold-light/90 mb-9 animate-fade-up animation-delay-900">
-          Bible preaching &amp; a church family in the heart of Sarasota
+        <p className="text-sm md:text-base text-white/85 max-w-xl mb-9 animate-fade-up animation-delay-900">
+          Helping people know Christ, grow in His Word, and connect in biblical community.
         </p>
         <div className="flex gap-4 justify-start flex-wrap animate-fade-up animation-delay-1000">
           <PlanVisitModal variant="accent" className="px-9 py-3.5" />
@@ -43,7 +42,12 @@ export default function PreachingHero() {
           >
             Watch Online
           </a>
-          <PrayerModal />
+          <a
+            href="/give"
+            className="inline-block text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full border-2 border-white/50 hover:bg-white/10 hover:border-white hover:-translate-y-0.5 transition-all"
+          >
+            Give
+          </a>
         </div>
        </div>
       </div>

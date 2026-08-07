@@ -214,7 +214,7 @@ export default function PlanVisitModal({
                       </label>
                       <select id="visit-service" name="service" className={inputClass} defaultValue="">
                         <option value="">I&rsquo;m not sure yet</option>
-                        <option>Sunday Bible Study Groups — 9:00 AM</option>
+                        <option>Sunday Small Groups — 9:00 AM</option>
                         <option>Sunday Morning Worship — 10:00 AM</option>
                         <option>Wednesday Midweek Service — 7:00 PM</option>
                       </select>
