@@ -1,4 +1,5 @@
 import AnimateOnScroll from "./AnimateOnScroll";
+import ServiceCountdown from "./ServiceCountdown";
 import { getRecentVideos } from "@/lib/youtube";
 
 export default async function LatestSermon() {
