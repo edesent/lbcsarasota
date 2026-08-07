@@ -102,7 +102,7 @@ export default function ServiceTimes() {
 
         {/* What to expect — compact supporting row */}
         <AnimateOnScroll delay={200}>
-          <div className="mt-10 grid sm:grid-cols-3 gap-x-8 gap-y-6 rounded-2xl border border-cream-dark bg-warm-white px-8 py-9">
+          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-6 rounded-2xl border border-cream-dark bg-warm-white px-8 py-9">
             {expectations.map((item, i) => (
               <div key={item.title} className="flex gap-4">
                 <span className="flex-shrink-0 w-9 h-9 rounded-full bg-gold/20 flex items-center justify-center text-gold-dark font-serif font-bold">
