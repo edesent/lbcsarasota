@@ -16,9 +16,9 @@ const services = [
   },
   {
     day: "Wednesday",
-    title: "Midweek Service",
+    title: "Bible Study, Teens & kids4Truth",
     time: "7:00 PM",
-    detail: "Bible study for adults, with kids4Truth and Youth4Truth for the kids",
+    detail: "Adult Bible study with dedicated ministries for teens and children",
   },
 ];
 
