@@ -4,9 +4,9 @@ import PlanVisitModal from "./PlanVisitModal";
 const services = [
   {
     day: "Sunday",
-    title: "Bible Study Groups",
+    title: "Small Groups",
     time: "9:00 AM",
-    detail: "Classes for every age — from the nursery to adults",
+    detail: "Age-appropriate groups for children, teens, and adults",
   },
   {
     day: "Sunday",
