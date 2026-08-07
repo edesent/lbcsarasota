@@ -22,7 +22,7 @@ const ministries = [
   },
   {
     label: "Music",
-    photo: "/img-0992.jpeg",
+    photo: "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/r0-FP3_AZuxUkuXgN5-n4CEnfgaNl0Y8/2026-07-12%2010.12.46-2-arb7MjpQlkfGxntiAFH075VaidO0Dk.jpeg",
     alt: "Brian playing tuba as part of the music ministry at Liberty Baptist Church",
     detail: "Congregational hymns, choir, instrumentalists, and special music in a reverent worship setting.",
   },
