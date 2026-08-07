@@ -3,7 +3,6 @@ import PreachingHero from "@/components/PreachingHero";
 import ServiceTimes from "@/components/ServiceTimes";
 import LatestSermon from "@/components/LatestSermon";
 import SignatureEvents from "@/components/SignatureEvents";
-import Programs from "@/components/Programs";
 import Connect from "@/components/Connect";
 import Missions from "@/components/Missions";
 import Welcome from "@/components/Welcome";
