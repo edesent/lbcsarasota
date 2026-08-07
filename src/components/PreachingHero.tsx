@@ -42,7 +42,12 @@ export default function PreachingHero() {
           >
             Watch Online
           </a>
-          <PrayerModal />
+          <a
+            href="/give"
+            className="inline-block text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full border-2 border-white/50 hover:bg-white/10 hover:border-white hover:-translate-y-0.5 transition-all"
+          >
+            Give
+          </a>
         </div>
        </div>
       </div>
