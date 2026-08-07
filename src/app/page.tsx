@@ -61,8 +61,8 @@ export default function Home() {
       <Navbar />
       <main>
         <PreachingHero />
-        <ServiceTimes />
         <LatestSermon />
+        <ServiceTimes />
         <SignatureEvents />
         <Connect />
         <Missions />
