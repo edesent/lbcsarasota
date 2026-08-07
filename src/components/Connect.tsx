@@ -4,26 +4,38 @@ import AnimateOnScroll from "./AnimateOnScroll";
 const ministries = [
   {
     label: "Small Groups",
+    photo: "/congregation.jpg",
+    alt: "Liberty Baptist Church family gathered together",
     detail: "Age-appropriate groups for children, teens, and adults every Sunday at 9:00 AM, with practical Bible teaching and opportunities to build real relationships.",
   },
   {
     label: "Children",
+    photo: "/academy-event.jpg",
+    alt: "Children participating in an event at Liberty Baptist Church",
     detail: "Nursery, Small Groups, Junior Church, and kids4Truth help children know God's Word and grow in faith. Junior Church is available during the Sunday morning service.",
   },
   {
     label: "Teens",
+    photo: "/youth-conference.jpg",
+    alt: "Liberty Baptist Church teens at a youth conference",
     detail: "Bible teaching, strong friendships, activities, conferences, and camps for middle and high school students.",
   },
   {
     label: "Music",
+    photo: "/img-0992.jpeg",
+    alt: "Brian playing tuba as part of the music ministry at Liberty Baptist Church",
     detail: "Congregational hymns, choir, instrumentalists, and special music in a reverent worship setting.",
   },
   {
     label: "Liberty Baptist Academy",
+    photo: "/images/2026-06-22-12-03-57-1.jpeg",
+    alt: "Liberty Baptist Academy students and school life",
     detail: "Distinctively Christian education for families seeking Biblical instruction, character, and academic growth.",
   },
   {
     label: "Church Family",
+    photo: "/car-show.jpg",
+    alt: "Liberty Baptist Church family and community event",
     detail: "Fellowships, outreach events, service opportunities, and meaningful relationships beyond the weekly services.",
   },
 ];
@@ -49,11 +61,21 @@ export default function Connect() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
           {ministries.map((ministry, i) => (
             <AnimateOnScroll key={ministry.label} delay={i * 70}>
-              <div className="h-full p-7 bg-cream rounded-2xl border border-cream-dark shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
-                <h3 className="font-serif text-xl font-semibold text-text-dark mb-2 leading-tight">
-                  {ministry.label}
-                </h3>
-                <p className="text-sm text-text-body leading-relaxed">{ministry.detail}</p>
+              <div className="h-full overflow-hidden bg-cream rounded-2xl border border-cream-dark shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+                <div className="aspect-[16/9] overflow-hidden bg-brown-deep">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={ministry.photo}
+                    alt={ministry.alt}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-7">
+                  <h3 className="font-serif text-xl font-semibold text-text-dark mb-2 leading-tight">
+                    {ministry.label}
+                  </h3>
+                  <p className="text-sm text-text-body leading-relaxed">{ministry.detail}</p>
+                </div>
               </div>
             </AnimateOnScroll>
           ))}
