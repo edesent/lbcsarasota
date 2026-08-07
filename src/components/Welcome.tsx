@@ -59,7 +59,7 @@ export default function Welcome() {
 
               <p className="mt-8 text-sm text-text-light">
                 <span className="font-semibold text-gold-dark">Est. 1978</span> &middot; Founded by
-                Dr. Gary Jackson &middot; Serving Sarasota for over 45 years
+                Dr. Gary Jackson &middot; Serving Sarasota for {yearsServing} years
               </p>
             </div>
           </AnimateOnScroll>
