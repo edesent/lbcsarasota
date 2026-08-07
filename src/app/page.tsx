@@ -22,7 +22,7 @@ const churchSchema = {
   image: "https://lbcsarasota.elijahdesent.com/og-image.jpg",
   slogan: "We're Here For You",
   description:
-    "Liberty Baptist Church is a warm, Bible-preaching church family in Sarasota, Florida, with hymns you can sing and preaching that explains the Scriptures. Home of Liberty Baptist Academy. Sunday Bible Study Groups at 9:00 AM, Morning Worship at 10:00 AM, and Midweek Service Wednesday at 7:00 PM.",
+    "Liberty Baptist Church is a warm, Bible-preaching church family in Sarasota, Florida, with preaching that explains the Scriptures plainly. Home of Liberty Baptist Academy. Sunday Bible Study Groups at 9:00 AM, Morning Worship at 10:00 AM, and Midweek Service Wednesday at 7:00 PM.",
   foundingDate: "1978-08-06",
   telephone: "+1-941-371-8239",
   email: "office@lbcsarasota.com",
