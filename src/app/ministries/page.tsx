@@ -38,8 +38,8 @@ const ministries: Ministry[] = [
   {
     title: "Children's Ministry",
     eyebrow: "Nursery · Junior Church · kids4Truth",
-    photo: "/academy-event.jpg",
-    alt: "Children participating in an event at Liberty Baptist Church",
+    photo: "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/XrYVvk7MNGsCQv1ulb6kNVlzBifr8YYI/2026-07-01%2019.29.20-iZFP8cVrXgR4CpmR6CtiLZhZdwjTEp.jpeg",
+    alt: "Children learning in a jungle-themed class at Liberty Baptist Church",
     body: "We want children to know God's Word, understand what they believe, and learn why they believe it. Nursery care is available, and Junior Church is offered during the Sunday morning service. Children are dismissed from the auditorium following the music service, and parents can pick them up in the education building after the morning service. On Wednesdays, kids4Truth uses memorable, age-appropriate Bible teaching to help children build a strong doctrinal foundation.",
     external: {
       href: "https://learnabout.kids4truth.com/",
