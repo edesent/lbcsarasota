@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import SubpageHero from "@/components/SubpageHero";
 
 export const metadata: Metadata = {
-  title: "Ministries for Every Age",
+  title: "Programs & Ministries for Every Age",
   description:
     "Explore ministries for children, teens, adults, and families at Liberty Baptist Church in Sarasota, Florida — including Small Groups, kids4Truth, teen ministry, music, and Liberty Baptist Academy.",
   alternates: { canonical: "/ministries" },
