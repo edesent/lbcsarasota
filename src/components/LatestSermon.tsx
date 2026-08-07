@@ -6,8 +6,11 @@ export default async function LatestSermon() {
   const [latest] = await getRecentVideos(1);
 
   return (
-    <section id="sermon" className="py-28 bg-warm-white">
+    <section id="sermon" className="py-24 md:py-28 bg-warm-white">
       <div className="max-w-7xl mx-auto px-6">
+        <div className="mb-12 md:mb-14">
+          <ServiceCountdown />
+        </div>
         <div className="grid lg:grid-cols-[1.4fr_1fr] gap-10 items-center">
           <AnimateOnScroll>
             <a
