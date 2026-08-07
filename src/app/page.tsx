@@ -64,7 +64,6 @@ export default function Home() {
         <LatestSermon />
         <ServiceTimes />
         <SignatureEvents />
-        <Programs />
         <Connect />
         <Missions />
         <Welcome />
