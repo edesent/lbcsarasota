@@ -73,7 +73,7 @@ const ministries: Ministry[] = [
     eyebrow: "Connect · Serve · Invite",
     photo: "/car-show.jpg",
     alt: "Community outreach event at Liberty Baptist Church",
-    body: "Some of Liberty's best-known ministries happen beyond the weekly schedule. Friend Days, community events, fellowships, missions emphasis, and seasonal outreach give our church family regular opportunities to invite friends, build relationships, and share the gospel.",
+    body: "Some of Liberty's best-known ministries happen beyond the weekly schedule. Community Day, fellowships, missions emphasis, seasonal outreach, and other special events give our church family regular opportunities to invite friends, build relationships, and share the gospel.",
     internal: { href: "/events", label: "See Upcoming Events" },
   },
 ];
