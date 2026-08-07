@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SubpageHero from "@/components/SubpageHero";
 import SermonGrid from "@/components/SermonGrid";
+import ServiceCountdown from "@/components/ServiceCountdown";
 import { getLiveStatus, getRecentVideos, youtube } from "@/lib/youtube";
 
 export const metadata: Metadata = {
