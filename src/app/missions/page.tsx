@@ -33,11 +33,10 @@ export default function MissionsPage() {
           <div className="max-w-7xl mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-10 lg:gap-14 items-center">
               <div className="overflow-hidden rounded-3xl shadow-lg bg-brown-deep aspect-[4/3]">
-                {/* This will be replaced with the 2026 Missions Conference photo once it is uploaded through the site editor. */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/sanctuary.jpg"
-                  alt="Liberty Baptist Church gathered for worship in Sarasota"
+                  src="/2026-06-22-11-59-28.jpeg"
+                  alt="Liberty Baptist Church Missions Conference with international flags in the sanctuary"
                   className="w-full h-full object-cover"
                 />
               </div>
