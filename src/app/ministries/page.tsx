@@ -31,8 +31,8 @@ const ministries: Ministry[] = [
   {
     title: "Small Groups",
     eyebrow: "Sundays at 9:00 AM",
-    photo: "/congregation.jpg",
-    alt: "Liberty Baptist Church family gathered together",
+    photo: "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/2RukBFfOmc2KfYONvFdXt4lZKwO3KUim/2026-07-12%2009.48.26-3-qAhFZnI6KcF0vUTGepQJT7ZiBS2oNv.jpeg",
+    alt: "Three ladies visiting together in the Liberty Baptist Church lobby",
     body: "Sunday mornings begin with age-appropriate Small Groups for children, teens, and adults. These smaller settings make it easier to learn the Bible, ask questions, build friendships, and grow together.",
   },
   {
