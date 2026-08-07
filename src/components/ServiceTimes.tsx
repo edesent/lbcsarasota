@@ -54,7 +54,7 @@ export default function ServiceTimes() {
         </AnimateOnScroll>
 
         {/* Service times */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (
             <AnimateOnScroll key={s.title} delay={i * 100}>
               <div className="h-full p-7 bg-warm-white rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-cream-dark">
@@ -71,6 +71,29 @@ export default function ServiceTimes() {
               </div>
             </AnimateOnScroll>
           ))}
+
+          <AnimateOnScroll delay={300}>
+            <div className="h-full p-7 bg-warm-white rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-cream-dark">
+              <p className="text-xs font-bold tracking-[0.2em] uppercase text-gold-dark mb-2">
+                Location
+              </p>
+              <h3 className="font-serif text-xl font-semibold text-text-dark mb-3">
+                Liberty Baptist Church
+              </h3>
+              <p className="text-sm text-text-body leading-relaxed mb-5">
+                4249 Bahia Vista Street<br />
+                Sarasota, FL 34232
+              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=4249+Bahia+Vista+Street+Sarasota+FL+34232"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-brown-light font-semibold text-sm border-b-2 border-gold/60 hover:border-gold transition-colors"
+              >
+                Get Directions
+              </a>
+            </div>
+          </AnimateOnScroll>
         </div>
 
         {/* What to expect — compact supporting row */}
