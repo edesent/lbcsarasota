@@ -1,21 +1,21 @@
 import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
 
-const events = [
+const upcomingEvents = [
+  {
+    label: "Friend Day",
+    detail:
+      "A special Sunday designed to make it easy to invite a friend, neighbor, coworker, or family member to worship with you at Liberty.",
+  },
   {
     label: "Missions Conference",
     detail:
-      "Once a year the missionaries we support come home to Liberty. Services, testimonies, and a look at what God is doing in over 100 countries.",
+      "A focused time to hear from missionaries, learn what God is doing around the world, and renew our commitment to the Great Commission.",
   },
   {
-    label: "Christmas & Easter",
+    label: "The Liberty Car Show",
     detail:
-      "Our biggest Sundays of the year, with special music from the choir and a service built for the friend or family member you've been wanting to bring.",
-  },
-  {
-    label: "Fellowships & Church Family Days",
-    detail:
-      "Meals together, ladies' and men's events, and days on the calendar that exist for no reason except getting to know each other better.",
+      "Our annual community event brings classic cars, families, food, and neighbors together on the Liberty campus.",
   },
 ];
 
@@ -26,104 +26,71 @@ export default function SignatureEvents() {
         <AnimateOnScroll>
           <div className="text-center max-w-3xl mx-auto mb-12 md:mb-14">
             <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-gold-dark mb-3">
-              Big Days at Liberty
+              What&rsquo;s Next at Liberty
             </span>
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-text-dark leading-snug">
-              There&rsquo;s Always Something{" "}
-              <em className="text-brown-light italic">Worth Showing Up For.</em>
+              Join Us for Our <em className="text-brown-light italic">Next Big Day.</em>
             </h2>
             <p className="text-text-body mt-4 leading-relaxed">
-              Some of the best days at Liberty aren&rsquo;t Sundays at all. If you&rsquo;ve been
-              looking for an easy first step through our doors, start with one of these.
+              We&rsquo;d love to have you with us. Here&rsquo;s the next special Sunday on the calendar at Liberty.
             </p>
           </div>
         </AnimateOnScroll>
 
-        {/* Featured — the Car Show */}
         <AnimateOnScroll>
-          <div className="relative overflow-hidden rounded-3xl bg-brown-deep p-9 md:p-14 shadow-xl mb-6 md:mb-8">
-            {/* Real photo from last year's show */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/car-show.jpg"
-              alt="Classic cars lined up on the Liberty Baptist Church lot for the annual car show"
-              className="absolute inset-0 w-full h-full object-cover object-center"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-brown-deep/95 via-brown-deep/85 to-brown-deep/60" />
-            <div className="absolute inset-0 bg-gradient-to-t from-brown-deep/80 via-transparent to-brown-deep/30" />
-
-            <div className="relative grid lg:grid-cols-[1.15fr_0.85fr] gap-8 lg:gap-14 items-center">
-              <div>
-                <span className="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-gold-light mb-4">
-                  <svg
-                    className="w-5 h-5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.7"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path d="M5 17H3v-5l2-5h14l2 5v5h-2" />
-                    <path d="M5 12h14" />
-                    <circle cx="7.5" cy="17" r="2" />
-                    <circle cx="16.5" cy="17" r="2" />
-                  </svg>
-                  Our Signature Community Event
-                </span>
-                <h3 className="font-serif text-3xl md:text-5xl font-bold text-white leading-tight mb-4">
-                  The Liberty Car Show
-                </h3>
-                <p className="text-white/75 leading-relaxed mb-4">
-                  Every year we open the lot, roll out the classics, and Sarasota shows up.
-                  Chrome, engines, food, and hundreds of neighbors on our campus for an
-                  afternoon &mdash; free to attend, free to enter, and about as easy an
-                  introduction to Liberty Baptist Church as there is.
-                </p>
-                <p className="text-white/75 leading-relaxed">
-                  Bring the car you&rsquo;ve been working on, or just bring the family and walk
-                  the rows. Either way, you&rsquo;ll leave having met somebody.
-                </p>
+          <div className="relative overflow-hidden rounded-3xl bg-brown-deep shadow-xl mb-8">
+            <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
+              <div className="relative min-h-[320px] lg:min-h-[470px] overflow-hidden bg-brown-deep">
+                {/* Temporary site photo; the Anniversary artwork will replace this once uploaded to the repo. */}
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/sanctuary.jpg"
+                  alt="Worship at Liberty Baptist Church in Sarasota"
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-brown-deep/65 via-brown-deep/10 to-transparent" />
               </div>
 
-              <div className="rounded-2xl bg-white/[0.07] border border-white/12 p-7 backdrop-blur-sm">
-                <p className="font-serif text-xl font-semibold text-white leading-tight mb-3">
-                  Want this year&rsquo;s date?
+              <div className="p-9 md:p-14 flex flex-col justify-center">
+                <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-gold-light mb-4">
+                  Sunday, September 13 · 10:00 AM
+                </span>
+                <h3 className="font-serif text-3xl md:text-5xl font-bold text-white leading-tight mb-3">
+                  Anniversary Sunday
+                </h3>
+                <p className="font-serif text-xl md:text-2xl italic text-gold-light mb-5">
+                  Celebrating 48 Years of God&rsquo;s Faithfulness
                 </p>
-                <p className="text-sm text-white/70 leading-relaxed mb-6">
-                  Dates are announced from the pulpit and on our Facebook page. Call the office
-                  or follow along and we&rsquo;ll make sure you know before it rolls around.
+                <p className="text-white/78 leading-relaxed mb-7 max-w-2xl">
+                  Join us as we celebrate Liberty Baptist Church&rsquo;s 48th anniversary and honor the faithful ministry of our founding pastor, Dr. Gary Jackson. We&rsquo;ll enjoy a special morning of worship, preaching, memories, and fellowship together.
                 </p>
-                <div className="flex flex-col gap-3">
-                  <a
-                    href="https://facebook.com/LBCsarasota"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block text-center bg-gold text-brown-deep font-semibold text-sm tracking-wide uppercase px-7 py-3.5 rounded-full hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-lg transition-all"
-                  >
-                    Follow on Facebook
-                  </a>
-                  <a
-                    href="tel:+19413718239"
-                    className="inline-block text-center text-white font-semibold text-sm tracking-wide uppercase px-7 py-3.5 rounded-full border-2 border-white/40 hover:bg-white/10 hover:border-white transition-all"
-                  >
-                    Call (941) 371-8239
-                  </a>
+                <div className="flex flex-wrap gap-3 text-sm text-white/80 mb-8">
+                  <span className="rounded-full border border-white/20 px-4 py-2">Special Service</span>
+                  <span className="rounded-full border border-white/20 px-4 py-2">10:00 AM</span>
+                  <span className="rounded-full border border-white/20 px-4 py-2">Sarasota, Florida</span>
                 </div>
+                <a
+                  href="#services"
+                  className="inline-block self-start bg-gold text-brown-deep font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full hover:bg-gold-light hover:-translate-y-0.5 hover:shadow-lg transition-all"
+                >
+                  Plan Your Visit
+                </a>
               </div>
             </div>
           </div>
         </AnimateOnScroll>
 
-        {/* Supporting events */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6 mb-12">
-          {events.map((e, i) => (
-            <AnimateOnScroll key={e.label} delay={i * 90}>
+          {upcomingEvents.map((event, i) => (
+            <AnimateOnScroll key={event.label} delay={i * 90}>
               <div className="h-full p-7 bg-cream rounded-2xl border border-cream-dark shadow-sm hover:shadow-md hover:-translate-y-1 transition-all">
+                <p className="text-xs font-bold tracking-[0.18em] uppercase text-gold-dark mb-2">
+                  Coming Up
+                </p>
                 <h3 className="font-serif text-xl font-semibold text-text-dark mb-2 leading-tight">
-                  {e.label}
+                  {event.label}
                 </h3>
-                <p className="text-sm text-text-body leading-relaxed">{e.detail}</p>
+                <p className="text-sm text-text-body leading-relaxed">{event.detail}</p>
               </div>
             </AnimateOnScroll>
           ))}
