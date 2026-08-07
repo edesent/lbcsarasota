@@ -56,7 +56,7 @@ const ministries: Ministry[] = [
   {
     title: "Music Ministry",
     eyebrow: "Reverent Worship",
-    photo: "/img-0992.jpeg",
+    photo: "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/r0-FP3_AZuxUkuXgN5-n4CEnfgaNl0Y8/2026-07-12%2010.12.46-2-arb7MjpQlkfGxntiAFH075VaidO0Dk.jpeg",
     alt: "Brian playing tuba as part of the music ministry at Liberty Baptist Church",
     body: "Music at Liberty is designed to draw attention to Christ and prepare hearts for God's Word. Congregational hymns, choir music, instrumentalists, and special music all have a place in our worship services.",
   },
