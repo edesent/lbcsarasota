@@ -49,8 +49,8 @@ const ministries: Ministry[] = [
   {
     title: "Teen Ministry",
     eyebrow: "Bible Teaching · Activities · Camps",
-    photo: "/youth-conference.jpg",
-    alt: "Teenagers from Liberty Baptist Church attending a youth conference",
+    photo: "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/7f-QQXlFH-0IPAQ691QyqkytCPDbgK5g/2026-06-25%2014.43.55-2-JJDP28Vese3qmIyT4RPSPRYLaWFSdB.jpeg",
+    alt: "Liberty Baptist Church teens together at a roller skating activity",
     body: "Liberty has an active teen ministry where students study Scripture, develop strong Christian friendships, serve together, and participate in activities, conferences, and camps throughout the year. More than 30 Liberty teens attended Teen Extreme camp together — a picture of the strong student community God has given our church.",
   },
   {
