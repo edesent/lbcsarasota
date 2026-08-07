@@ -25,7 +25,7 @@ const services = [
 const expectations = [
   {
     title: "A Warm Welcome",
-    body: "Greeters meet you at the door, the Welcome Center has an information packet for you, and an usher will help you find a seat. You'll never be singled out or put on the spot.",
+    body: "Greeters meet you at the door, the Welcome Center has an information packet for you, and an usher will help you find a seat.",
   },
   {
     title: "Bible Preaching",
@@ -33,7 +33,7 @@ const expectations = [
   },
   {
     title: "Come As You Are",
-    body: "There's no dress code at Liberty. A nursery is available for ages 2 and under, and the offering is our gift to guests — never expected.",
+    body: "There's no dress code at Liberty, and a nursery is available for ages 2 and under.",
   },
 ];
 
@@ -49,16 +49,12 @@ export default function ServiceTimes() {
             <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark leading-snug">
               Join Us This <em className="text-brown-light italic">Week</em>
             </h2>
-            <p className="text-text-body mt-3 max-w-2xl mx-auto">
-              At Liberty Baptist you&rsquo;ll find a church family that loves the Lord and loves
-              people. Here&rsquo;s when we gather at 4249 Bahia Vista Street &mdash; and what to
-              expect when you visit.
-            </p>
+
           </div>
         </AnimateOnScroll>
 
         {/* Service times */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((s, i) => (
             <AnimateOnScroll key={s.title} delay={i * 100}>
               <div className="h-full p-7 bg-warm-white rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-cream-dark">
@@ -75,6 +71,29 @@ export default function ServiceTimes() {
               </div>
             </AnimateOnScroll>
           ))}
+
+          <AnimateOnScroll delay={300}>
+            <div className="h-full p-7 bg-warm-white rounded-2xl shadow-sm hover:shadow-md hover:-translate-y-1 transition-all border border-cream-dark">
+              <p className="text-xs font-bold tracking-[0.2em] uppercase text-gold-dark mb-2">
+                Location
+              </p>
+              <h3 className="font-serif text-xl font-semibold text-text-dark mb-3">
+                Liberty Baptist Church
+              </h3>
+              <p className="text-sm text-text-body leading-relaxed mb-5">
+                4249 Bahia Vista Street<br />
+                Sarasota, FL 34232
+              </p>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=4249+Bahia+Vista+Street+Sarasota+FL+34232"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block text-brown-light font-semibold text-sm border-b-2 border-gold/60 hover:border-gold transition-colors"
+              >
+                Get Directions
+              </a>
+            </div>
+          </AnimateOnScroll>
         </div>
 
         {/* What to expect — compact supporting row */}
