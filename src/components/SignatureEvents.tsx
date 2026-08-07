@@ -3,11 +3,6 @@ import AnimateOnScroll from "./AnimateOnScroll";
 
 const upcomingEvents = [
   {
-    label: "Community Day",
-    detail:
-      "A special Sunday for our church family and community, with an easy opportunity to invite friends, neighbors, coworkers, and family members to worship with you at Liberty.",
-  },
-  {
     label: "Missions Conference",
     detail:
       "A focused time to hear from missionaries, learn what God is doing around the world, and renew our commitment to the Great Commission.",
