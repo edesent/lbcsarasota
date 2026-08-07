@@ -10,8 +10,8 @@ const ministries = [
   },
   {
     label: "Children",
-    photo: "/academy-event.jpg",
-    alt: "Children participating in an event at Liberty Baptist Church",
+    photo: "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/XrYVvk7MNGsCQv1ulb6kNVlzBifr8YYI/2026-07-01%2019.29.20-iZFP8cVrXgR4CpmR6CtiLZhZdwjTEp.jpeg",
+    alt: "Children learning in a jungle-themed class at Liberty Baptist Church",
     detail: "Nursery, Small Groups, Junior Church, and kids4Truth help children know God's Word and grow in faith. Junior Church is available during the Sunday morning service.",
   },
   {
