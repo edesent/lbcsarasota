@@ -51,13 +51,13 @@ export default function SignatureEvents() {
                   Sunday, September 13 · 10:00 AM
                 </span>
                 <h3 className="font-serif text-3xl md:text-5xl font-bold text-white leading-tight mb-3">
-                  Anniversary Sunday
+                  Anniversary Sunday &amp; Community Day
                 </h3>
                 <p className="font-serif text-xl md:text-2xl italic text-gold-light mb-5">
                   Celebrating 48 Years of God&rsquo;s Faithfulness
                 </p>
                 <p className="text-white/78 leading-relaxed mb-7 max-w-2xl">
-                  Join us as we celebrate Liberty Baptist Church&rsquo;s 48th anniversary and honor the faithful ministry of our founding pastor, Dr. Gary Jackson. We&rsquo;ll enjoy a special morning of worship, preaching, memories, and fellowship together.
+                  Join us as we celebrate Liberty Baptist Church&rsquo;s 48th anniversary, welcome friends from our community, and honor the faithful ministry of our founding pastor, Dr. Gary Jackson. We&rsquo;ll enjoy a special morning of worship, preaching, memories, and fellowship together.
                 </p>
                 <div className="flex flex-wrap gap-3 text-sm text-white/80 mb-8">
                   <span className="rounded-full border border-white/20 px-4 py-2">Special Service</span>
