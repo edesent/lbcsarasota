@@ -107,7 +107,7 @@ export default function GivePage() {
         </section>
       </main>
 
-      <Script src="https://static.tithely.com/give/give.js" strategy="afterInteractive" />
+      <script src="https://static.tithely.com/give/give.js" defer></script>
       <Footer />
     </>
   );
