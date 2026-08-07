@@ -23,7 +23,7 @@ const SITE_URL = "https://lbcsarasota.elijahdesent.com";
 const SITE_NAME = "Liberty Baptist Church";
 const SITE_TAGLINE = "We're Here For You";
 const SITE_DESCRIPTION =
-  "Liberty Baptist Church is a warm, Bible-preaching church family in Sarasota, Florida — and the home of Liberty Baptist Academy. Join us Sundays: Bible study groups at 9:00 AM and morning worship at 10:00 AM. We sing the great hymns, we explain the Scriptures plainly, and we welcome you like family.";
+  "A welcoming church in Sarasota, FL. Expository preaching, genuine community, active missions, and worship that's reverent yet refreshingly alive.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
