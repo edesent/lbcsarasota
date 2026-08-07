@@ -33,7 +33,11 @@ const expectations = [
   },
   {
     title: "Come As You Are",
-    body: "There's no dress code at Liberty, and a nursery is available for ages 2 and under.",
+    body: "There's no dress code at Liberty.",
+  },
+  {
+    title: "For Children",
+    body: "Nursery is available for ages 2 and under. Children are dismissed to Junior Church after the music portion of the morning service and may be picked up in the Education Building afterward.",
   },
 ];
 
