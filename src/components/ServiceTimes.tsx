@@ -25,7 +25,7 @@ const services = [
 const expectations = [
   {
     title: "A Warm Welcome",
-    body: "Greeters meet you at the door, the Welcome Center has an information packet for you, and an usher will help you find a seat. You'll never be singled out or put on the spot.",
+    body: "Greeters meet you at the door, the Welcome Center has an information packet for you, and an usher will help you find a seat.",
   },
   {
     title: "Bible Preaching",
@@ -33,7 +33,7 @@ const expectations = [
   },
   {
     title: "Come As You Are",
-    body: "There's no dress code at Liberty. A nursery is available for ages 2 and under, and the offering is our gift to guests — never expected.",
+    body: "There's no dress code at Liberty, and a nursery is available for ages 2 and under.",
   },
 ];
 
