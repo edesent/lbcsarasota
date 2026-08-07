@@ -17,7 +17,17 @@ export const metadata: Metadata = {
   },
 };
 
-const ministries = [
+type Ministry = {
+  title: string;
+  eyebrow: string;
+  photo: string;
+  alt: string;
+  body: string;
+  external?: { href: string; label: string };
+  internal?: { href: string; label: string };
+};
+
+const ministries: Ministry[] = [
   {
     title: "Small Groups",
     eyebrow: "Sundays at 9:00 AM",
