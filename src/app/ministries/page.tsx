@@ -56,14 +56,14 @@ const ministries: Ministry[] = [
   {
     title: "Music Ministry",
     eyebrow: "Reverent Worship",
-    photo: "/choir.jpg",
-    alt: "Liberty Baptist Church choir singing",
+    photo: "/img-0992.jpeg",
+    alt: "Brian playing tuba as part of the music ministry at Liberty Baptist Church",
     body: "Music at Liberty is designed to draw attention to Christ and prepare hearts for God's Word. Congregational hymns, choir music, instrumentalists, and special music all have a place in our worship services.",
   },
   {
     title: "Liberty Baptist Academy",
     eyebrow: "Christian Education",
-    photo: "/academy-gym.jpg",
+    photo: "/images/2026-06-22-12-03-57-1.jpeg",
     alt: "Students at Liberty Baptist Academy",
     body: "Liberty Baptist Academy is a ministry of Liberty Baptist Church serving families who desire a distinctly Christian education. Our school combines individual academic progress with Biblical instruction, character development, and a caring school community.",
     internal: { href: "/#academy", label: "Explore the Academy" },
