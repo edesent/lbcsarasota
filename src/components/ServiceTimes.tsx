@@ -6,7 +6,7 @@ const services = [
     day: "Sunday",
     title: "Bible Study Groups",
     time: "9:00 AM",
-    detail: "Classes for every age, grouped by age — from the nursery to adults",
+    detail: "Classes for every age — from the nursery to adults",
   },
   {
     day: "Sunday",
