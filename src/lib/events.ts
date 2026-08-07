@@ -6,7 +6,7 @@ export interface ChurchEvent {
 
 // The regular weekly rhythm of the church (evergreen — safe to show on the homepage).
 export const weeklyEvents: ChurchEvent[] = [
-  { when: "Sunday · 9:00 AM", title: "Bible Study Groups", detail: "Age-graded classes for every age" },
+  { when: "Sunday · 9:00 AM", title: "Small Groups", detail: "Age-appropriate groups for children, teens, and adults" },
   { when: "Sunday · 10:00 AM", title: "Morning Worship", detail: "Hymns, special music, and Bible preaching" },
   { when: "Sunday · 10:00 AM", title: "Junior Church", detail: "A service just for children ages 3–11" },
   { when: "Wednesday · 7:00 PM", title: "Midweek Service", detail: "Adult Bible study, kids4Truth, and Youth4Truth" },
