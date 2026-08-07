@@ -84,7 +84,7 @@ export default function MinistriesPage() {
       <Navbar />
       <main>
         <SubpageHero
-          eyebrow="Ministries"
+          eyebrow="Programs & Ministries"
           title="A Place for Every Age"
           subtitle="Grow in God's Word, build lasting relationships, and find meaningful ways to serve."
         />
