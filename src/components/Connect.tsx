@@ -34,8 +34,8 @@ const ministries = [
   },
   {
     label: "Church Family",
-    photo: "/car-show.jpg",
-    alt: "Liberty Baptist Church family and community event",
+    photo: "/sanctuary.jpg",
+    alt: "The full Liberty Baptist Church auditorium during a service",
     detail: "Fellowships, outreach events, service opportunities, and meaningful relationships beyond the weekly services.",
   },
 ];
