@@ -16,8 +16,8 @@ const ministries = [
   },
   {
     label: "Teens",
-    photo: "/youth-conference.jpg",
-    alt: "Liberty Baptist Church teens at a youth conference",
+    photo: "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/7f-QQXlFH-0IPAQ691QyqkytCPDbgK5g/2026-06-25%2014.43.55-2-JJDP28Vese3qmIyT4RPSPRYLaWFSdB.jpeg",
+    alt: "Liberty Baptist Church teens together at a roller skating activity",
     detail: "Bible teaching, strong friendships, activities, conferences, and camps for middle and high school students.",
   },
   {
