@@ -3,16 +3,16 @@ import AnimateOnScroll from "./AnimateOnScroll";
 
 const ministries = [
   {
+    label: "Small Groups",
+    detail: "Age-appropriate groups for children, teens, and adults every Sunday at 9:00 AM, with practical Bible teaching and opportunities to build real relationships.",
+  },
+  {
     label: "Children",
-    detail: "Nursery, Junior Church, Small Groups, and kids4Truth help children know God's Word and grow in faith.",
+    detail: "Nursery, Small Groups, Junior Church, and kids4Truth help children know God's Word and grow in faith. Junior Church is available during the Sunday morning service.",
   },
   {
     label: "Teens",
     detail: "Bible teaching, strong friendships, activities, conferences, and camps for middle and high school students.",
-  },
-  {
-    label: "Small Groups",
-    detail: "Age-appropriate groups for children, teens, and adults every Sunday at 9:00 AM.",
   },
   {
     label: "Music",
@@ -38,10 +38,10 @@ export default function Connect() {
               Ministries for Every Age
             </span>
             <h2 className="font-serif text-3xl md:text-5xl font-bold text-text-dark leading-snug">
-              Find Your Place at <em className="text-brown-light italic">Liberty.</em>
+              There&rsquo;s a Place for <em className="text-brown-light italic">Your Family.</em>
             </h2>
             <p className="text-text-body mt-4 max-w-2xl mx-auto leading-relaxed">
-              From children to senior adults, Liberty offers practical ways to learn Scripture, build authentic relationships, and serve together.
+              From children and teens to adults and senior adults, Liberty offers practical ways to learn Scripture, build authentic relationships, and serve together.
             </p>
           </div>
         </AnimateOnScroll>
@@ -65,7 +65,7 @@ export default function Connect() {
               href="/ministries"
               className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full hover:bg-brown hover:-translate-y-0.5 hover:shadow-lg transition-all"
             >
-              Explore All Ministries
+              Explore Programs &amp; Ministries
             </Link>
           </div>
         </AnimateOnScroll>
