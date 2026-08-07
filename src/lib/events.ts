@@ -16,6 +16,6 @@ export const weeklyEvents: ChurchEvent[] = [
 export const ministryEvents: ChurchEvent[] = [
   { when: "Sunday Evenings", title: "Patch the Pirate Club", detail: "Character-building fun and Bible truth for children" },
   { when: "Every Service", title: "Nursery", detail: "Loving, secure care for babies and toddlers ages 2 and under" },
-  { when: "Sundays · 9:00 AM", title: "Sunday School", detail: "Classes for ages 3 through 12th grade, grouped by age" },
+  { when: "Sundays · 9:00 AM", title: "Small Groups", detail: "Age-appropriate groups for children, teens, and adults" },
   { when: "Year-round", title: "World Missions", detail: "Praying for and supporting 33 missionaries in over 100 countries" },
 ];
