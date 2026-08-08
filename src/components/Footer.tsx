@@ -94,7 +94,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://www.youtube.com/@libertybaptistchurchsaraso3117"
+                href="https://www.youtube.com/channel/UCo86RoK75Yc8V0z-CjDqBgQ"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
