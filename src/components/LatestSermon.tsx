@@ -9,6 +9,14 @@ export default async function LatestSermon() {
   return (
     <section id="sermon" className="py-24 md:py-28 bg-warm-white">
       <div className="max-w-7xl mx-auto px-6">
+        <div className="text-center mb-10">
+          <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-gold-dark mb-3">
+            Livestream &amp; Messages
+          </span>
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark leading-snug">
+            Watch <em className="text-brown-light italic">Online</em>
+          </h2>
+        </div>
         <div className="mb-12 md:mb-14">
           <ServiceCountdown />
         </div>
