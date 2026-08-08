@@ -1,6 +1,9 @@
 export default function PreachingHero() {
   return (
-    <header id="home" className="relative min-h-screen flex items-center justify-start overflow-hidden">
+    <header
+      id="home"
+      className="relative min-h-[calc(100vh+5rem)] md:min-h-[calc(100vh+8rem)] flex items-center justify-start overflow-hidden"
+    >
       {/* Background — our sanctuary on a Sunday morning */}
       <div className="absolute inset-0 z-0 bg-brown-deep">
         {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -18,9 +21,10 @@ export default function PreachingHero() {
 
       {/* Content */}
       <div className="relative z-[2] w-full max-w-7xl mx-auto px-6">
-       {/* The Welcome panel below pulls up over the hero (-mt-28 / -mt-44), so
-           the extra bottom padding keeps the buttons clear of that white edge. */}
-       <div className="text-left text-white max-w-2xl pt-10 pb-40 md:pb-60">
+       {/* Top padding clears the fixed navbar; the bottom padding keeps the
+           buttons clear of the Welcome panel, which pulls up over the hero
+           (-mt-28 / -mt-44). */}
+       <div className="text-left text-white max-w-2xl pt-28 md:pt-32 pb-40 md:pb-60">
         <p className="text-sm font-semibold tracking-[0.25em] uppercase text-gold-light mb-3 animate-fade-up animation-delay-200">
           Welcome to
         </p>

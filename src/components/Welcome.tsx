@@ -20,7 +20,7 @@ export default function Welcome() {
   return (
     <section
       id="welcome"
-      className="relative z-10 -mt-28 md:-mt-44 bg-warm-white rounded-t-[2.5rem] md:rounded-t-[3.5rem] shadow-[0_-24px_50px_rgba(11,39,64,0.25)] pt-20 md:pt-24 pb-24 md:pb-28"
+      className="relative z-10 -mt-28 md:-mt-44 bg-warm-white rounded-t-[2.5rem] md:rounded-t-[3.5rem] shadow-[0_-24px_50px_rgba(11,39,64,0.25)] pt-32 md:pt-40 pb-24 md:pb-28"
     >
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-[1fr_0.9fr] gap-12 lg:gap-16 items-center">
