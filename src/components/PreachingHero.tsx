@@ -1,5 +1,3 @@
-import PlanVisitModal from "./PlanVisitModal";
-
 export default function PreachingHero() {
   return (
     <header id="home" className="relative min-h-screen flex items-center justify-start overflow-hidden">
