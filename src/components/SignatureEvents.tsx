@@ -50,7 +50,7 @@ export default function SignatureEvents() {
                   Sunday, September 13 · 10:00 AM
                 </span>
                 <h3 className="font-serif text-3xl md:text-5xl font-bold text-white leading-tight mb-3">
-                  Anniversary Sunday &amp; Community Day
+                  Anniversary Sunday &amp; Friend Day
                 </h3>
                 <p className="font-serif text-xl md:text-2xl italic text-gold-light mb-5">
                   Celebrating 48 Years of God&rsquo;s Faithfulness
