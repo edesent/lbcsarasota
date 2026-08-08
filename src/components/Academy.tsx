@@ -27,18 +27,12 @@ export default function Academy() {
                 <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-gold-dark mb-3">
                   Christian Education
                 </span>
-                <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark leading-snug mb-5">
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark leading-snug mb-8">
                   Liberty Baptist Academy
                 </h2>
-                <p className="text-lg text-text-body leading-relaxed mb-8">
-                  Right here on our campus, Liberty Baptist Academy gives Sarasota families a
-                  Christian education that&rsquo;s small on purpose. Every student is known,
-                  every student is challenged, and the Bible isn&rsquo;t a class period &mdash;
-                  it&rsquo;s the foundation of the whole school day.
-                </p>
               </div>
 
-              <figure className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl aspect-[16/9] mb-10">
+              <figure className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl aspect-[16/9] mb-9">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/2026-05-22-09-15-00.jpeg"
@@ -46,6 +40,15 @@ export default function Academy() {
                   className="w-full h-full object-cover"
                 />
               </figure>
+
+              <div className="max-w-4xl mx-auto text-center">
+                <p className="text-lg text-text-body leading-relaxed mb-10">
+                  Right here on our campus, Liberty Baptist Academy gives Sarasota families a
+                  Christian education that&rsquo;s small on purpose. Every student is known,
+                  every student is challenged, and the Bible isn&rsquo;t a class period &mdash;
+                  it&rsquo;s the foundation of the whole school day.
+                </p>
+              </div>
 
               <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
                 {highlights.map((item) => (
