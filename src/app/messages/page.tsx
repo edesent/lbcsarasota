@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SermonGrid from "@/components/SermonGrid";
 import ServiceCountdown from "@/components/ServiceCountdown";
-import { getLiveStatus, getPastLivestreams, youtube } from "@/lib/youtube";
+import { getLiveStatus, getRecentLongVideos, youtube } from "@/lib/youtube";
 
 export const metadata: Metadata = {
   title: "Sermons & Messages",
