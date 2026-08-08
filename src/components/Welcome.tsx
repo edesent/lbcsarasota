@@ -41,7 +41,7 @@ export default function Welcome() {
               </p>
               <p className="text-lg text-text-body leading-relaxed mb-8">
                 Our church family is led by <strong className="text-text-dark font-semibold">Pastor
-                Anthony &amp; Alaina Aiken</strong>, who joined Liberty Baptist Church in 2026.
+                Anthony Aiken</strong>, who joined Liberty Baptist Church in 2026.
                 Whether you&rsquo;re exploring faith for the very first time or looking for a
                 church home after years away, there&rsquo;s a warm seat waiting for you this
                 Sunday &mdash; and nobody will put you on the spot.
