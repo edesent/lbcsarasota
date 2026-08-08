@@ -14,7 +14,6 @@ export const weeklyEvents: ChurchEvent[] = [
 
 // Standing ministries and fellowship opportunities (shown on the full Events page).
 export const ministryEvents: ChurchEvent[] = [
-  { when: "Sunday Evenings", title: "Patch the Pirate Club", detail: "Character-building fun and Bible truth for children" },
   { when: "Every Service", title: "Nursery", detail: "Loving, secure care for babies and toddlers ages 2 and under" },
   { when: "Sundays · 9:00 AM", title: "Small Groups", detail: "Age-appropriate groups for children, teens, and adults" },
   { when: "Year-round", title: "World Missions", detail: "Praying for and supporting missionaries helping reach more than 200 countries and territories" },
