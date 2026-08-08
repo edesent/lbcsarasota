@@ -50,7 +50,7 @@ export default function Welcome() {
               <div className="flex flex-wrap gap-4">
                 <PlanVisitModal variant="primary" className="px-8 py-3.5" />
                 <Link
-                  href="/staff"
+                  href="/about-us#pastor"
                   className="inline-block text-brown-light font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light/40 hover:border-brown-light hover:-translate-y-0.5 transition-all"
                 >
                   Meet Our Pastor
