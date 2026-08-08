@@ -14,10 +14,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1.0,
     },
     {
+      url: `${SITE_URL}/about-us`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
       url: `${SITE_URL}/staff`,
       lastModified,
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.6,
     },
     ...staff.map((m) => ({
       url: `${SITE_URL}/staff/${m.slug}`,
