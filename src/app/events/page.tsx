@@ -72,11 +72,6 @@ export default function EventsPage() {
             </h2>
             <EventList items={weeklyEvents} />
 
-            <h2 className="font-serif text-3xl font-bold text-text-dark mt-16 mb-8">
-              Outreach &amp; Ministries
-            </h2>
-            <EventList items={ministryEvents} />
-
             <div className="mt-16 p-8 bg-cream rounded-2xl border border-cream-dark text-center">
               <h3 className="font-serif text-2xl font-bold text-text-dark mb-3">
                 Special Events &amp; Announcements
