@@ -3,7 +3,7 @@ import ServiceCountdown from "./ServiceCountdown";
 import { getRecentLongVideos } from "@/lib/youtube";
 
 export default async function LatestSermon() {
-  const recentVideos = await getPastLivestreams(15);
+  const recentVideos = await getRecentLongVideos(15);
   const latest = recentVideos[0];
 
   return (
