@@ -60,18 +60,30 @@ export default function AboutUsPage() {
         </section>
 
         <section className="py-20 md:py-24 bg-warm-white">
-          <div className="max-w-5xl mx-auto px-6 text-center">
-            <span className="text-xs font-bold tracking-[0.2em] uppercase text-gold-dark">Our Founder</span>
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mt-3 mb-2">Dr. Gary &amp; Martha Jackson</h2>
-            <p className="font-semibold text-brown-light mb-7">Founding Pastor &amp; Pastor Emeritus</p>
-            <div className="max-w-3xl mx-auto space-y-5 text-lg text-text-body leading-relaxed">
-              <p>Dr. Jackson started Liberty Baptist Church on August 6, 1978.</p>
-              <p>
-                He attended Maranatha Baptist Bible College, Clearwater Christian College, Temple Baptist Theological Seminary, and Louisiana Baptist Theological Seminary, earning a Master of Divinity and a Doctorate of Ministry.
-              </p>
-              <p>
-                He is married to Martha Jackson and they have three children and eight grandchildren. Liberty Baptist Church is deeply grateful for Dr. and Mrs. Jackson and for the decades of faithful ministry through which God established and strengthened this church.
-              </p>
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center">
+              <figure className="rounded-2xl overflow-hidden shadow-xl aspect-[4/5]">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/img-1005.jpeg"
+                  alt="Dr. Gary and Martha Jackson"
+                  className="w-full h-full object-cover object-top"
+                />
+              </figure>
+              <div>
+                <span className="text-xs font-bold tracking-[0.2em] uppercase text-gold-dark">Our Founder</span>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mt-3 mb-2">Dr. Gary &amp; Martha Jackson</h2>
+                <p className="font-semibold text-brown-light mb-7">Founding Pastor &amp; Pastor Emeritus</p>
+                <div className="space-y-5 text-lg text-text-body leading-relaxed">
+                  <p>Dr. Jackson started Liberty Baptist Church on August 6, 1978.</p>
+                  <p>
+                    He attended Maranatha Baptist Bible College, Clearwater Christian College, Temple Baptist Theological Seminary, and Louisiana Baptist Theological Seminary, earning a Master of Divinity and a Doctorate of Ministry.
+                  </p>
+                  <p>
+                    He is married to Martha Jackson and they have three children and eight grandchildren. Liberty Baptist Church is deeply grateful for Dr. and Mrs. Jackson and for the decades of faithful ministry through which God established and strengthened this church.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
