@@ -25,13 +25,10 @@ export default function AboutUsPage() {
         <section className="py-20 md:py-24 bg-warm-white">
           <div className="max-w-4xl mx-auto px-6 space-y-6 text-lg text-text-body leading-relaxed">
             <p>
-              When you come to Liberty Baptist Church it still &ldquo;feels like church.&rdquo; We believe the Holy Scriptures of the Old and New Testaments to be the verbally inspired Word of God; the final authority for faith, inspiration and practice; inerrant, infallible, God-breathed, and preserved in the King James Bible. Here at Liberty, we strive to honor and glorify God in all that we do.
+              Liberty Baptist Church is a welcoming, Bible-preaching church in Sarasota, Florida, committed to helping people of all ages come to know Christ, grow in their faith, and build strong families through God&rsquo;s Word. Since 1978, Liberty has served Sarasota through Christ-centered worship, practical Bible preaching, discipleship, and genuine Christian community.
             </p>
             <p>
-              Our purpose is to see souls saved by fulfilling the Great Commission of spreading the Gospel to the entire world and encouraging believers to live for Christ!
-            </p>
-            <p>
-              Dr. Gary Jackson started Liberty Baptist Church on August 6, 1978. In July 2026, Pastor Anthony Aiken became pastor of Liberty Baptist Church, continuing the church&rsquo;s commitment to faithful Bible preaching while building on the strong foundation established through decades of God&rsquo;s faithfulness.
+              Whether you&rsquo;re new to church, new to the area, or looking for a church home, you&rsquo;ll find a friendly, family atmosphere committed to sharing the Gospel and serving others. Through our church ministries and Christian school, we are investing in the next generation while continuing the legacy of faith in Sarasota and beyond.
             </p>
             <p className="font-serif text-2xl text-text-dark italic border-l-4 border-gold pl-6">
               The story of Liberty Baptist Church is still being written. We thank God for His faithfulness through every generation and look forward with anticipation to what He will continue to do in the years ahead.
