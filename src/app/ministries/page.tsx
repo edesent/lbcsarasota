@@ -63,7 +63,7 @@ const ministries: Ministry[] = [
   {
     title: "Liberty Baptist Academy",
     eyebrow: "Christian Education",
-    photo: "/images/2026-06-22-12-03-57-1.jpeg",
+    photo: "/2026-05-22-09-15-00.jpeg",
     alt: "Students at Liberty Baptist Academy",
     body: "Liberty Baptist Academy is a ministry of Liberty Baptist Church serving families who desire a distinctly Christian education. Our school combines individual academic progress with Biblical instruction, character development, and a caring school community.",
     internal: { href: "/#academy", label: "Explore the Academy" },
