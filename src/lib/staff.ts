@@ -17,7 +17,7 @@ export const staff: StaffMember[] = [
     photo: "/pastor-family.jpg",
     lead: true,
     bio: [
-      "Pastor Anthony Aiken and his wife Alaina joined the Liberty Baptist Church family in 2026, and Pastor Aiken was installed as pastor in July of 2026. A graduate of West Coast Baptist College, he brings a heart for clear, Christ-centered preaching that works through the Scriptures a passage at a time — and a passion for reaching people with the Gospel.",
+      "Pastor Anthony Aiken and his wife Alaina joined the Liberty Baptist Church family in 2026, and Pastor Aiken became pastor in July of 2026. A graduate of West Coast Baptist College, he brings a heart for clear, Christ-centered preaching that works through the Scriptures a passage at a time — and a passion for reaching people with the Gospel.",
       "The Aikens have two children and love pouring their lives into the church family. Together they are committed to continuing Liberty's legacy as a Bible-preaching church that welcomes everyone like family.",
       "Whether you have questions about the Bible, want someone to talk to, or simply need prayer, Pastor Aiken would love to meet you. We're here for you.",
     ],
