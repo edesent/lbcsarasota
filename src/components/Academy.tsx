@@ -22,8 +22,8 @@ export default function Academy() {
         <AnimateOnScroll>
           <div className="relative overflow-hidden rounded-3xl bg-warm-white border border-cream-dark shadow-sm">
             <div className="absolute inset-y-0 left-0 w-1.5 bg-gradient-to-b from-gold via-gold-light to-gold" />
-            <div className="grid lg:grid-cols-[1fr_1fr] gap-10 lg:gap-14 p-9 md:p-12 lg:p-14 items-center">
-              <div>
+            <div className="p-9 md:p-12 lg:p-14">
+              <div className="max-w-4xl mx-auto text-center">
                 <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-gold-dark mb-3">
                   Christian Education
                 </span>
@@ -36,27 +36,9 @@ export default function Academy() {
                   every student is challenged, and the Bible isn&rsquo;t a class period &mdash;
                   it&rsquo;s the foundation of the whole school day.
                 </p>
-
-                <div className="grid gap-5 mb-8">
-                  {highlights.map((item) => (
-                    <div key={item.title} className="border-l-2 border-gold pl-5">
-                      <h3 className="font-serif text-lg font-semibold text-text-dark mb-1">
-                        {item.title}
-                      </h3>
-                      <p className="text-sm text-text-body leading-relaxed">{item.text}</p>
-                    </div>
-                  ))}
-                </div>
-
-                <a
-                  href="/ministries#academy"
-                  className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light hover:bg-brown hover:border-brown hover:-translate-y-0.5 hover:shadow-lg transition-all"
-                >
-                  Learn More
-                </a>
               </div>
 
-              <figure className="rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
+              <figure className="max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-xl aspect-[16/9] mb-10">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
                   src="/2026-05-22-09-15-00.jpeg"
@@ -64,6 +46,29 @@ export default function Academy() {
                   className="w-full h-full object-cover"
                 />
               </figure>
+
+              <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto mb-10">
+                {highlights.map((item) => (
+                  <div
+                    key={item.title}
+                    className="rounded-2xl border border-cream-dark bg-cream/40 p-6 text-center"
+                  >
+                    <h3 className="font-serif text-lg font-semibold text-text-dark mb-2">
+                      {item.title}
+                    </h3>
+                    <p className="text-sm text-text-body leading-relaxed">{item.text}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="text-center">
+                <a
+                  href="/ministries#academy"
+                  className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light hover:bg-brown hover:border-brown hover:-translate-y-0.5 hover:shadow-lg transition-all"
+                >
+                  Learn More
+                </a>
+              </div>
             </div>
           </div>
         </AnimateOnScroll>
