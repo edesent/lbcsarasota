@@ -18,7 +18,9 @@ export default function PreachingHero() {
 
       {/* Content */}
       <div className="relative z-[2] w-full max-w-7xl mx-auto px-6">
-       <div className="text-left text-white max-w-2xl py-10">
+       {/* The Welcome panel below pulls up over the hero (-mt-28 / -mt-44), so
+           the extra bottom padding keeps the buttons clear of that white edge. */}
+       <div className="text-left text-white max-w-2xl pt-10 pb-40 md:pb-60">
         <p className="text-sm font-semibold tracking-[0.25em] uppercase text-gold-light mb-3 animate-fade-up animation-delay-200">
           Welcome to
         </p>
