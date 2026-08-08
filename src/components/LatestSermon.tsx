@@ -61,13 +61,6 @@ export default async function LatestSermon() {
 
           <AnimateOnScroll delay={200}>
             <div>
-              <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-gold-dark mb-3">
-                Livestream &amp; Messages
-              </span>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark leading-snug mb-4">
-                Watch <em className="text-brown-light italic">Online</em>
-              </h2>
-
               {latest ? (
                 <div className="mb-6">
                   <p className="text-xs font-bold tracking-[0.15em] uppercase text-gold-dark mb-1">
