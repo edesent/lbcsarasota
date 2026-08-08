@@ -102,7 +102,8 @@ export default function MinistriesPage() {
             {ministries.map((ministry) => (
               <article
                 key={ministry.title}
-                className="overflow-hidden rounded-3xl border border-cream-dark bg-cream shadow-sm"
+                id={ministry.title === "Liberty Baptist Academy" ? "academy" : undefined}
+                className="scroll-mt-28 overflow-hidden rounded-3xl border border-cream-dark bg-cream shadow-sm"
               >
                 <div className="aspect-[16/9] overflow-hidden bg-brown-deep">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
