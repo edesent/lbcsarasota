@@ -30,7 +30,7 @@ export const founder = {
   role: "Founding Pastor & Pastor Emeritus",
   years: "1978 – 2026",
   bio: [
-    "Dr. Gary Jackson founded Liberty Baptist Church on August 6, 1978, and faithfully led the church for more than four decades. Holding a Master of Divinity and a Doctorate of Ministry, he built Liberty on the preaching of God's Word and a passion for reaching the world with the Gospel.",
+    "Dr. Gary Jackson founded Liberty Baptist Church on August 6, 1978, and faithfully led the church for nearly five decades. Holding a Master of Divinity and a Doctorate of Ministry, he built Liberty on the preaching of God's Word and a passion for reaching the world with the Gospel.",
     "Dr. Jackson and his wife Martha have three children and eight grandchildren. The Liberty family is forever grateful for his decades of faithful, Bible-centered ministry — a legacy that continues today.",
   ],
 };
