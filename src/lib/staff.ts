@@ -26,8 +26,8 @@ export const staff: StaffMember[] = [
 
 // Honored separately (no detail page): the church's founding pastor.
 export const founder = {
-  names: "Dr. Gary Jackson",
-  role: "Founding Pastor",
+  names: "Dr. Gary & Martha Jackson",
+  role: "Founding Pastor & Pastor Emeritus",
   years: "1978 – 2026",
   bio: [
     "Dr. Gary Jackson founded Liberty Baptist Church on August 6, 1978, and faithfully led the church for more than four decades. Holding a Master of Divinity and a Doctorate of Ministry, he built Liberty on the preaching of God's Word and a passion for reaching the world with the Gospel.",
