@@ -24,7 +24,7 @@ export const dynamic = "force-dynamic";
 
 export default async function MessagesPage() {
   const [videos, live] = await Promise.all([
-    getPastLivestreams(12),
+    getRecentLongVideos(12),
     getLiveStatus(),
   ]);
 
