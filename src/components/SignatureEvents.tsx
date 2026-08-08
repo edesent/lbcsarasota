@@ -36,11 +36,10 @@ export default function SignatureEvents() {
           <div className="relative overflow-hidden rounded-3xl bg-brown-deep shadow-xl mb-8">
             <div className="grid lg:grid-cols-[0.95fr_1.05fr]">
               <div className="relative min-h-[320px] lg:min-h-[470px] overflow-hidden bg-brown-deep">
-                {/* Temporary site photo; the Anniversary artwork will replace this once uploaded to the repo. */}
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/sanctuary.jpg"
-                  alt="Worship at Liberty Baptist Church in Sarasota"
+                  src="/2026-07-12-21-34-45.jpeg"
+                  alt="Anniversary Sunday and Friend Day at Liberty Baptist Church"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brown-deep/65 via-brown-deep/10 to-transparent" />
