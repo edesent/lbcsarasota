@@ -130,6 +130,10 @@ export default function RootLayout({
           src={`${CHAT.origin}/widget/wbc-chat.js`}
           data-api={CHAT.origin}
           data-key={CHAT.apiKey}
+          data-auto-open="desktop"
+          data-auto-open-delay="12000"
+          data-auto-close-delay="8000"
+          data-remember-dismissal="session"
           strategy="afterInteractive"
         />
       </body>
