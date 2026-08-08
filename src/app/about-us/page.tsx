@@ -79,12 +79,11 @@ export default function AboutUsPage() {
                 <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mt-3 mb-2">Dr. Gary &amp; Martha Jackson</h2>
                 <p className="font-semibold text-brown-light mb-7">Founding Pastor &amp; Pastor Emeritus</p>
                 <div className="space-y-5 text-lg text-text-body leading-relaxed">
-                  <p>Dr. Jackson started Liberty Baptist Church on August 6, 1978.</p>
                   <p>
-                    He attended Maranatha Baptist Bible College, Clearwater Christian College, Temple Baptist Theological Seminary, and Louisiana Baptist Theological Seminary, earning a Master of Divinity and a Doctorate of Ministry.
+                    Dr. Gary Jackson founded Liberty Baptist Church on August 6, 1978, and faithfully led the church for more than four decades. Holding a Master of Divinity and a Doctorate of Ministry, he built Liberty on the preaching of God&rsquo;s Word and a passion for reaching the world with the Gospel.
                   </p>
                   <p>
-                    He is married to Martha Jackson and they have three children and eight grandchildren. Liberty Baptist Church is deeply grateful for Dr. and Mrs. Jackson and for the decades of faithful ministry through which God established and strengthened this church.
+                    Dr. Jackson and his wife Martha have three children and eight grandchildren. Liberty Baptist Church is deeply grateful for Dr. and Mrs. Jackson and for the decades of faithful ministry through which God established and strengthened this church.
                   </p>
                 </div>
               </div>
