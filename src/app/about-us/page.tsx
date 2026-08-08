@@ -69,7 +69,7 @@ export default function AboutUsPage() {
               <figure className="rounded-2xl overflow-hidden shadow-xl aspect-[4/5]">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/img-1005.jpeg"
+                  src="/img-1005.jpeg?v=20260807"
                   alt="Dr. Gary and Martha Jackson"
                   className="w-full h-full object-cover object-top"
                 />
