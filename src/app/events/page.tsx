@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SubpageHero from "@/components/SubpageHero";
-import { weeklyEvents, ministryEvents, type ChurchEvent } from "@/lib/events";
+import { weeklyEvents, type ChurchEvent } from "@/lib/events";
 
 export const metadata: Metadata = {
   title: "Church Calendar",
