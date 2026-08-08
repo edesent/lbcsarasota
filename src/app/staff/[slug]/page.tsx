@@ -92,6 +92,36 @@ export default async function StaffMemberPage({
                 <p key={i}>{p}</p>
               ))}
 
+              {member.slug === "anthony-aiken" ? (
+                <div className="pt-5">
+                  <h2 className="font-serif text-2xl md:text-3xl font-bold text-text-dark mb-5">
+                    Installation Service
+                  </h2>
+                  <a
+                    href="https://www.youtube.com/live/r-dA5-_uios?is=DUQAP3_5s4TWJShH"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group relative block aspect-video overflow-hidden rounded-2xl bg-brown-deep shadow-xl"
+                    aria-label="Watch Pastor Anthony Aiken's installation service on YouTube"
+                  >
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="https://i.ytimg.com/vi/r-dA5-_uios/maxresdefault.jpg"
+                      alt="Pastor Anthony Aiken Installation Service"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-brown-deep/15 group-hover:bg-brown-deep/25 transition-colors" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <span className="w-20 h-20 rounded-full bg-gold flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                        <svg className="w-8 h-8 text-brown-deep ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              ) : null}
+
               <div className="pt-4">
                 <Link
                   href="/staff"
