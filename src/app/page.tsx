@@ -66,10 +66,10 @@ export default function Home() {
         <ServiceTimes />
         <SignatureEvents />
         <Connect />
-        <Academy />
         <Missions />
         <Welcome />
         <LifeAtLiberty />
+        <Academy />
       </main>
       <Footer />
     </>
