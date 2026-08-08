@@ -5,6 +5,24 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { staff, getStaff } from "@/lib/staff";
 
+const INSTALLATION_VIDEO_URL =
+  "https://www.youtube.com/live/r-dA5-_uios?is=DUQAP3_5s4TWJShH";
+const INSTALLATION_VIDEO_ID = "r-dA5-_uios";
+
+async function getInstallationVideoTitle() {
+  try {
+    const response = await fetch(
+      `https://www.youtube.com/oembed?url=${encodeURIComponent(INSTALLATION_VIDEO_URL)}&format=json`,
+      { next: { revalidate: 86400 } },
+    );
+    if (!response.ok) return "Installation Service";
+    const data = (await response.json()) as { title?: string };
+    return data.title || "Installation Service";
+  } catch {
+    return "Installation Service";
+  }
+}
+
 export function generateStaticParams() {
   return staff.map((m) => ({ slug: m.slug }));
 }
@@ -39,6 +57,9 @@ export default async function StaffMemberPage({
   const { slug } = await params;
   const member = getStaff(slug);
   if (!member) notFound();
+
+  const installationVideoTitle =
+    member.slug === "anthony-aiken" ? await getInstallationVideoTitle() : "";
 
   return (
     <>
@@ -93,31 +114,36 @@ export default async function StaffMemberPage({
               ))}
 
               {member.slug === "anthony-aiken" ? (
-                <div className="pt-5">
-                  <h2 className="font-serif text-2xl md:text-3xl font-bold text-text-dark mb-5">
+                <div className="pt-6">
+                  <p className="text-xs font-bold tracking-[0.18em] uppercase text-gold-dark mb-3">
                     Installation Service
-                  </h2>
+                  </p>
                   <a
-                    href="https://www.youtube.com/live/r-dA5-_uios?is=DUQAP3_5s4TWJShH"
+                    href={INSTALLATION_VIDEO_URL}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group relative block aspect-video overflow-hidden rounded-2xl bg-brown-deep shadow-xl"
-                    aria-label="Watch Pastor Anthony Aiken's installation service on YouTube"
+                    className="group block"
+                    aria-label={`Watch ${installationVideoTitle} on YouTube`}
                   >
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img
-                      src="https://i.ytimg.com/vi/r-dA5-_uios/maxresdefault.jpg"
-                      alt="Pastor Anthony Aiken Installation Service"
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-brown-deep/15 group-hover:bg-brown-deep/25 transition-colors" />
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="w-20 h-20 rounded-full bg-gold flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
-                        <svg className="w-8 h-8 text-brown-deep ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </span>
+                    <div className="relative aspect-video overflow-hidden rounded-2xl bg-brown-deep shadow-xl">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src={`https://i.ytimg.com/vi/${INSTALLATION_VIDEO_ID}/hqdefault.jpg`}
+                        alt={installationVideoTitle}
+                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      />
+                      <div className="absolute inset-0 bg-brown-deep/10 group-hover:bg-brown-deep/20 transition-colors" />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <span className="w-20 h-20 rounded-full bg-gold flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
+                          <svg className="w-8 h-8 text-brown-deep ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M8 5v14l11-7z" />
+                          </svg>
+                        </span>
+                      </div>
                     </div>
+                    <h2 className="font-serif text-xl md:text-2xl font-bold text-text-dark leading-snug mt-4 group-hover:text-brown-light transition-colors">
+                      {installationVideoTitle}
+                    </h2>
                   </a>
                 </div>
               ) : null}
