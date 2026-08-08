@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import PlanVisitModal from "./PlanVisitModal";
 
 const navLinks = [
-  { href: "#welcome", label: "About" },
+  { href: "/about-us", label: "About" },
   { href: "#services", label: "Visit" },
   { href: "/ministries", label: "Programs & Ministries" },
   { href: "#academy", label: "Academy" },
