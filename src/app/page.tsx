@@ -65,9 +65,9 @@ export default function Home() {
         <LatestSermon />
         <ServiceTimes />
         <SignatureEvents />
+        <Welcome />
         <Connect />
         <Missions />
-        <Welcome />
         <LifeAtLiberty />
         <Academy />
       </main>
