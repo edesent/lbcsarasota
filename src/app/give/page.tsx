@@ -66,13 +66,15 @@ export default function GivePage() {
                 Make a one-time gift or set up recurring giving securely through Tithe.ly —
                 anytime, from anywhere.
               </p>
-              <button
-                className="tithely-give-button transition-all hover:-translate-y-0.5 hover:shadow-lg"
-                data-form="3608be89-18a4-4a12-aba4-745b0f962654"
+              <a
+                href="https://give.tithe.ly/?formId=3608be89-18a4-4a12-aba4-745b0f962654"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-all hover:-translate-y-0.5 hover:shadow-lg"
                 style={tithelyButtonStyle}
               >
                 Give Now
-              </button>
+              </a>
             </div>
 
             <div className="p-8 bg-cream rounded-2xl border border-cream-dark">
