@@ -3,8 +3,8 @@ import ServiceCountdown from "./ServiceCountdown";
 import { getPastLivestreams } from "@/lib/youtube";
 
 export default async function LatestSermon() {
-  const recentVideos = await getRecentVideos(15);
-  const latest = recentVideos.find((video) => /\blive\b/i.test(video.title));
+  const recentVideos = await getPastLivestreams(15);
+  const latest = recentVideos[0];
 
   return (
     <section id="sermon" className="py-24 md:py-28 bg-warm-white">
