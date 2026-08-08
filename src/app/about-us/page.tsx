@@ -47,13 +47,17 @@ export default function AboutUsPage() {
             </figure>
             <div>
               <span className="text-xs font-bold tracking-[0.2em] uppercase text-gold-dark">Meet the Pastor</span>
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mt-3 mb-5">Pastor Anthony &amp; Alaina Aiken</h2>
-              <p className="text-lg text-text-body leading-relaxed mb-5">
-                Pastor Anthony Aiken became pastor of Liberty Baptist Church in July 2026. He is committed to clear, Christ-centered, verse-by-verse Bible preaching and to caring personally for the Liberty church family.
-              </p>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mt-3 mb-5">Pastor Anthony Aiken</h2>
+              <div className="space-y-5 text-lg text-text-body leading-relaxed mb-7">
+                <p>
+                  Pastor Anthony Aiken and his wife Alaina joined the Liberty Baptist Church family in 2026, and Pastor Aiken became pastor in July of 2026. A graduate of West Coast Baptist College and Pensacola Theological Seminary (Pensacola Christian College), he brings a heart for clear, Christ-centered preaching that works through the Scriptures one passage at a time &mdash; and a passion for reaching people with the Gospel.
+                </p>
+                <p>
+                  The Aikens have two children and love pouring their lives into the church family. Together they are committed to continuing Liberty&rsquo;s legacy as a Bible-preaching church with a compassionate vision to reach the world.
+                </p>
+              </div>
               <div className="flex flex-wrap gap-4">
-                <Link href="/staff/anthony-aiken" className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full hover:bg-brown transition-all">Meet Our Pastor</Link>
-                <a href="https://www.youtube.com/live/r-dA5-_uios?is=fFISt2HcjX_A2VpH" target="_blank" rel="noreferrer" className="inline-block text-brown-light font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light/40 hover:border-brown-light transition-all">Watch Installation Service</a>
+                <a href="https://www.youtube.com/live/r-dA5-_uios?is=fFISt2HcjX_A2VpH" target="_blank" rel="noreferrer" className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full hover:bg-brown transition-all">Watch Installation Service</a>
               </div>
             </div>
           </div>
