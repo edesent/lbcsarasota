@@ -39,7 +39,7 @@ export default function AboutUsPage() {
           </div>
         </section>
 
-        <section className="py-20 md:py-24 bg-cream">
+        <section id="pastor" className="py-20 md:py-24 bg-cream">
           <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-[0.9fr_1.1fr] gap-12 items-center">
             <figure className="rounded-2xl overflow-hidden shadow-xl aspect-[4/5]">
               {/* eslint-disable-next-line @next/next/no-img-element */}
