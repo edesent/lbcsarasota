@@ -62,10 +62,10 @@ export default function Home() {
       <Navbar />
       <main>
         <PreachingHero />
-        <LatestSermon />
-        <ServiceTimes />
-        <SignatureEvents />
         <Welcome />
+        <ServiceTimes />
+        <LatestSermon />
+        <SignatureEvents />
         <Connect />
         <Missions />
         <LifeAtLiberty />
