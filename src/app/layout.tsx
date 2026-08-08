@@ -1,8 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Source_Serif_4, Lato } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
-import { CHAT } from "@/config/chat";
+import ChatWidget from "@/components/ChatWidget";
 
 // Matches the church's own wordmark: a transitional serif with wedge serifs
 // and moderate stroke contrast — not the didone look of Playfair.
@@ -126,16 +125,7 @@ export default function RootLayout({
     >
       <body className="min-h-screen flex flex-col">
         {children}
-        <Script
-          src={`${CHAT.origin}/widget/wbc-chat.js`}
-          data-api={CHAT.origin}
-          data-key={CHAT.apiKey}
-          data-auto-open="desktop"
-          data-auto-open-delay="12000"
-          data-auto-close-delay="8000"
-          data-remember-dismissal="session"
-          strategy="afterInteractive"
-        />
+        <ChatWidget />
       </body>
     </html>
   );
