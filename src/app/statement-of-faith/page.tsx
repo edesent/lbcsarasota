@@ -139,7 +139,7 @@ export default function StatementOfFaithPage() {
                 Have questions about what we believe? We&rsquo;d love to talk with you.
               </p>
               <a
-                href="/#contact"
+                href="mailto:office@lbcsarasota.com"
                 className="mt-5 inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full hover:bg-brown hover:-translate-y-0.5 hover:shadow-lg transition-all"
               >
                 Get in Touch
