@@ -1,9 +1,9 @@
 import AnimateOnScroll from "./AnimateOnScroll";
 import ServiceCountdown from "./ServiceCountdown";
-import { getRecentLongVideos } from "@/lib/youtube";
+import { getRecentLivestreams } from "@/lib/youtube";
 
 export default async function LatestSermon() {
-  const recentVideos = await getRecentLongVideos(15);
+  const recentVideos = await getRecentLivestreams(15);
   const latest = recentVideos[0];
 
   return (

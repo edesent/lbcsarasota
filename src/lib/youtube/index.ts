@@ -132,10 +132,134 @@ async function getDurationSeconds(videoId: string): Promise<number | null> {
   }
 }
 
+interface StreamEntry {
+  id: string;
+  title: string;
+  /** YouTube's own relative wording, e.g. "Streamed 2 days ago". */
+  relative: string;
+}
+
+/**
+ * The channel's livestreams, newest first, scraped from its /streams tab.
+ *
+ * This is the only source that actually knows which videos were livestreams.
+ * The RSS feed lists every upload with no way to tell them apart, which is why
+ * filtering by duration only ever removed Shorts — regular uploads still got
+ * through.
+ */
+export async function getPastLivestreams(
+  channelId: string = youtube.channelId,
+): Promise<StreamEntry[]> {
+  try {
+    const res = await fetch(`https://www.youtube.com/channel/${channelId}/streams`, {
+      next: { revalidate: 1800 },
+      headers: { "User-Agent": UA, "Accept-Language": "en-US,en;q=0.9" },
+    });
+    if (!res.ok) return [];
+
+    const html = await res.text();
+    const raw = html.match(/var ytInitialData\s*=\s*(\{[\s\S]*?\});<\/script>/)?.[1];
+    if (!raw) return [];
+
+    const data: unknown = JSON.parse(raw);
+    const entries: StreamEntry[] = [];
+    const seen = new Set<string>();
+
+    // YouTube renders these as lockupViewModel now (it used to be
+    // videoRenderer), so read whichever shape comes back.
+    const walk = (node: unknown): void => {
+      if (Array.isArray(node)) {
+        node.forEach(walk);
+        return;
+      }
+      if (!node || typeof node !== "object") return;
+      const obj = node as Record<string, unknown>;
+
+      const lockup = obj.lockupViewModel as Record<string, unknown> | undefined;
+      if (lockup && typeof lockup.contentId === "string") {
+        const id = lockup.contentId;
+        const meta = (lockup.metadata as Record<string, unknown> | undefined)
+          ?.lockupMetadataViewModel as Record<string, unknown> | undefined;
+        const title =
+          ((meta?.title as Record<string, unknown> | undefined)?.content as string) ?? "";
+        // "Streamed 2 days ago" lives in the metadata rows beside the view count.
+        const relative = JSON.stringify(meta?.metadata ?? "").match(
+          /"content":"(Streamed [^"]+)"/,
+        )?.[1];
+        if (id && title && !seen.has(id)) {
+          seen.add(id);
+          entries.push({ id, title, relative: relative ?? "" });
+        }
+      }
+
+      const legacy = obj.videoRenderer as Record<string, unknown> | undefined;
+      if (legacy && typeof legacy.videoId === "string") {
+        const id = legacy.videoId;
+        const title =
+          ((legacy.title as Record<string, unknown> | undefined)?.runs as
+            | Array<{ text?: string }>
+            | undefined)?.[0]?.text ?? "";
+        if (id && title && !seen.has(id)) {
+          seen.add(id);
+          entries.push({ id, title, relative: "" });
+        }
+      }
+
+      Object.values(obj).forEach(walk);
+    };
+
+    walk(data);
+    return entries;
+  } catch {
+    return [];
+  }
+}
+
+/**
+ * Recent livestreams as sermon entries.
+ *
+ * The /streams tab decides *which* videos count; the RSS feed supplies the
+ * exact publish date and description for the ones it still carries (it holds
+ * roughly the latest 15 uploads). Older streams fall back to YouTube's own
+ * "Streamed N ago" wording rather than showing an invented date.
+ *
+ * If the scrape fails, this falls back to the old duration filter so the
+ * sermon page degrades to "recent long videos" instead of going blank.
+ */
+export async function getRecentLivestreams(
+  limit = 12,
+  channelId: string = youtube.channelId,
+): Promise<SermonVideo[]> {
+  const [streams, feed] = await Promise.all([
+    getPastLivestreams(channelId),
+    getRecentVideos(15, channelId),
+  ]);
+
+  if (streams.length === 0) return getRecentLongVideos(limit, channelId);
+
+  const byId = new Map(feed.map((video) => [video.id, video]));
+
+  return streams.slice(0, limit).map(({ id, title, relative }) => {
+    const fromFeed = byId.get(id);
+    if (fromFeed) return fromFeed;
+    return {
+      id,
+      title,
+      url: `https://www.youtube.com/watch?v=${id}`,
+      isoDate: "",
+      published: relative,
+      thumbnail: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
+      description: "",
+    };
+  });
+}
+
 /**
  * Latest full-length uploads. YouTube Shorts can now be up to 3 minutes long,
  * so anything at or under 180 seconds is excluded. If YouTube does not expose
  * a duration for a video, we keep it rather than accidentally hiding a sermon.
+ *
+ * Kept as the fallback for getRecentLivestreams.
  */
 export async function getRecentLongVideos(
   limit = 12,

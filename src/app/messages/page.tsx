@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SermonGrid from "@/components/SermonGrid";
 import ServiceCountdown from "@/components/ServiceCountdown";
-import { getLiveStatus, getRecentLongVideos, youtube } from "@/lib/youtube";
+import { getLiveStatus, getRecentLivestreams, youtube } from "@/lib/youtube";
 
 export const metadata: Metadata = {
   title: "Sermons & Messages",
@@ -24,7 +24,7 @@ export const dynamic = "force-dynamic";
 
 export default async function MessagesPage() {
   const [videos, live] = await Promise.all([
-    getRecentLongVideos(12),
+    getRecentLivestreams(12),
     getLiveStatus(),
   ]);
 
