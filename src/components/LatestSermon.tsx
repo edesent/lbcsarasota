@@ -1,6 +1,7 @@
 import AnimateOnScroll from "./AnimateOnScroll";
 import ServiceCountdown from "./ServiceCountdown";
-import { getRecentLivestreams } from "@/lib/youtube";
+import SermonPlayer from "./SermonPlayer";
+import { getRecentLivestreams, youtube } from "@/lib/youtube";
 
 export default async function LatestSermon() {
   const recentVideos = await getRecentLivestreams(15);
@@ -22,41 +23,33 @@ export default async function LatestSermon() {
         </div>
         <div className="grid lg:grid-cols-[1.4fr_1fr] gap-10 items-center">
           <AnimateOnScroll>
-            <a
-              href="/messages"
-              className="relative block aspect-video rounded-2xl overflow-hidden shadow-xl bg-brown-deep group"
-            >
-              {latest ? (
-                <>
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={latest.thumbnail}
-                    alt={latest.title}
-                    className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-brown-deep/70 via-brown-deep/10 to-transparent" />
-                </>
-              ) : (
-                <>
-                  <div className="absolute inset-0 bg-gradient-to-br from-brown to-brown-deep" />
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(43,179,214,0.18),transparent_70%)]" />
-                </>
-              )}
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-20 h-20 rounded-full bg-gold flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform">
-                  <svg className="w-8 h-8 text-brown-deep ml-1" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
+            {latest ? (
+              <SermonPlayer
+                videoId={latest.id}
+                title={latest.title}
+                thumbnail={latest.thumbnail}
+              />
+            ) : (
+              <a
+                href={youtube.channelUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block aspect-video rounded-2xl overflow-hidden shadow-xl bg-brown-deep group"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-brown to-brown-deep" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(62,186,227,0.18),transparent_70%)]" />
+                <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                  <div className="w-20 h-20 rounded-full bg-gold flex items-center justify-center shadow-2xl group-hover:scale-110 transition-transform mb-4">
+                    <svg className="w-8 h-8 text-brown-deep ml-1" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                  </div>
+                  <p className="text-white/80 text-sm">
+                    Watch our services on YouTube
+                  </p>
                 </div>
-              </div>
-              {latest && (
-                <div className="absolute inset-x-0 bottom-0 p-5">
-                  <span className="inline-block text-[11px] font-bold tracking-[0.18em] uppercase text-gold-light bg-brown-deep/60 rounded-full px-3 py-1">
-                    Latest Sermon
-                  </span>
-                </div>
-              )}
-            </a>
+              </a>
+            )}
           </AnimateOnScroll>
 
           <AnimateOnScroll delay={200}>
