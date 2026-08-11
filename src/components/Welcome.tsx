@@ -1,6 +1,5 @@
 import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
-import PlanVisitModal from "./PlanVisitModal";
 
 function getYearsServing() {
   const founded = { year: 1978, month: 8, day: 6 };
