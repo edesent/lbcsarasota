@@ -4,7 +4,6 @@ import ServiceTimes from "@/components/ServiceTimes";
 import LatestSermon from "@/components/LatestSermon";
 import SignatureEvents from "@/components/SignatureEvents";
 import Connect from "@/components/Connect";
-import Academy from "@/components/Academy";
 import Missions from "@/components/Missions";
 import Welcome from "@/components/Welcome";
 import LifeAtLiberty from "@/components/LifeAtLiberty";
