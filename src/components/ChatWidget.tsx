@@ -5,52 +5,40 @@ import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { CHAT } from "@/config/chat";
 
-// The widget now owns dismissal itself: a small x on the bubble that hides the
-// whole thing for data-dismiss-days, always visible on touch devices.
-//
-// What it still doesn't decide is *when* the greeting is allowed to appear —
-// its own guard only lasts one page load, so the popup would return on every
-// navigation. That policy is ours: homepage only, once per visitor.
-
-const SEEN_KEY = "lbc-chat-greeting-seen";
+// Keep the chat icon available without unsolicited greeting popups or sounds.
+// Visitors can still open the chat themselves whenever they want it.
 
 export default function ChatWidget() {
   const pathname = usePathname();
 
   useEffect(() => {
-    const onHomepage = pathname === "/";
+    const originalPlay = HTMLMediaElement.prototype.play;
 
-    const handle = (popup: HTMLElement) => {
-      if (popup.dataset.lbcHandled) return;
-      popup.dataset.lbcHandled = "1";
-
-      let seen = false;
-      try {
-        seen = window.localStorage.getItem(SEEN_KEY) === "1";
-      } catch {
-        /* private mode — treat as unseen */
+    HTMLMediaElement.prototype.play = function () {
+      if (this instanceof HTMLAudioElement) {
+        return Promise.resolve();
       }
+      return originalPlay.call(this);
+    };
 
-      if (!onHomepage || seen) {
-        popup.remove();
-        return;
-      }
+    return () => {
+      HTMLMediaElement.prototype.play = originalPlay;
+    };
+  }, []);
 
-      try {
-        window.localStorage.setItem(SEEN_KEY, "1");
-      } catch {
-        /* nothing to do */
-      }
+  useEffect(() => {
+    const removeGreeting = (popup: HTMLElement) => {
+      popup.remove();
     };
 
     const existing = document.getElementById("wbc-greeting-popup");
-    if (existing) handle(existing);
+    if (existing) removeGreeting(existing);
 
     const observer = new MutationObserver((mutations) => {
       for (const mutation of mutations) {
         for (const node of mutation.addedNodes) {
           if (node instanceof HTMLElement && node.id === "wbc-greeting-popup") {
-            handle(node);
+            removeGreeting(node);
           }
         }
       }
