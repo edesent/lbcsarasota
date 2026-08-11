@@ -83,11 +83,9 @@ export default function Navbar() {
             </li>
           ))}
           <li className="ml-2">
-            <PlanVisitModal
-              label="Plan a Visit"
-              variant="accent"
-              className="px-6 py-2.5 normal-case tracking-normal"
-            />
+            <a href="/plan-your-visit" className="inline-block bg-gold text-brown-deep font-semibold text-sm px-6 py-2.5 rounded-full hover:bg-gold-light transition-all">
+              Plan a Visit
+            </a>
           </li>
         </ul>
 
