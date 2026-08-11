@@ -130,12 +130,10 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="mt-4" onClick={() => setMenuOpen(false)}>
-              <PlanVisitModal
-                label="Plan a Visit"
-                variant="accent"
-                className="w-full text-center px-6 py-3 normal-case tracking-normal"
-              />
+            <li className="mt-4">
+              <a href="/plan-your-visit" onClick={() => setMenuOpen(false)} className="block w-full text-center bg-gold text-brown-deep font-semibold px-6 py-3 rounded-full">
+                Plan a Visit
+              </a>
             </li>
           </ul>
         </div>
