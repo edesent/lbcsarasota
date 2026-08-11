@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import PlanVisitModal from "./PlanVisitModal";
 
 const navLinks = [
   { href: "/about-us", label: "About" },
@@ -84,11 +83,9 @@ export default function Navbar() {
             </li>
           ))}
           <li className="ml-2">
-            <PlanVisitModal
-              label="Plan a Visit"
-              variant="accent"
-              className="px-6 py-2.5 normal-case tracking-normal"
-            />
+            <a href="/plan-your-visit" className="inline-block bg-gold text-brown-deep font-semibold text-sm px-6 py-2.5 rounded-full hover:bg-gold-light transition-all">
+              Plan a Visit
+            </a>
           </li>
         </ul>
 
@@ -133,12 +130,10 @@ export default function Navbar() {
                 </a>
               </li>
             ))}
-            <li className="mt-4" onClick={() => setMenuOpen(false)}>
-              <PlanVisitModal
-                label="Plan a Visit"
-                variant="accent"
-                className="w-full text-center px-6 py-3 normal-case tracking-normal"
-              />
+            <li className="mt-4">
+              <a href="/plan-your-visit" onClick={() => setMenuOpen(false)} className="block w-full text-center bg-gold text-brown-deep font-semibold px-6 py-3 rounded-full">
+                Plan a Visit
+              </a>
             </li>
           </ul>
         </div>

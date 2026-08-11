@@ -1,6 +1,5 @@
 import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
-import PlanVisitModal from "./PlanVisitModal";
 
 function getYearsServing() {
   const founded = { year: 1978, month: 8, day: 6 };
@@ -48,7 +47,7 @@ export default function Welcome() {
               </p>
 
               <div className="flex flex-wrap gap-4">
-                <PlanVisitModal variant="primary" className="px-8 py-3.5" />
+                <Link href="/plan-your-visit" className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full hover:bg-brown hover:-translate-y-0.5 transition-all">Plan Your Visit</Link>
                 <Link
                   href="/about-us#pastor"
                   className="inline-block text-brown-light font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light/40 hover:border-brown-light hover:-translate-y-0.5 transition-all"

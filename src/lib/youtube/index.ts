@@ -239,19 +239,32 @@ export async function getRecentLivestreams(
 
   const byId = new Map(feed.map((video) => [video.id, video]));
 
-  return streams.slice(0, limit).map(({ id, title, relative }) => {
-    const fromFeed = byId.get(id);
-    if (fromFeed) return fromFeed;
-    return {
-      id,
-      title,
-      url: `https://www.youtube.com/watch?v=${id}`,
-      isoDate: "",
-      published: relative,
-      thumbnail: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
-      description: "",
-    };
-  });
+  // A church sermon/service should never be a short-form clip. YouTube's
+  // /streams page occasionally exposes unrelated video lockups in its page data,
+  // so verify duration as a second guard instead of trusting the tab alone.
+  const checkedStreams = await Promise.all(
+    streams.slice(0, Math.max(limit * 2, 15)).map(async (stream) => ({
+      stream,
+      duration: await getDurationSeconds(stream.id),
+    })),
+  );
+
+  return checkedStreams
+    .filter(({ duration }) => duration === null || duration >= 600)
+    .slice(0, limit)
+    .map(({ stream: { id, title, relative } }) => {
+      const fromFeed = byId.get(id);
+      if (fromFeed) return fromFeed;
+      return {
+        id,
+        title,
+        url: `https://www.youtube.com/watch?v=${id}`,
+        isoDate: "",
+        published: relative,
+        thumbnail: `https://i.ytimg.com/vi/${id}/hqdefault.jpg`,
+        description: "",
+      };
+    });
 }
 
 /**
