@@ -22,25 +22,6 @@ const services = [
   },
 ];
 
-const expectations = [
-  {
-    title: "A Warm Welcome",
-    body: "Greeters meet you at the door, the Welcome Center has an information packet for you, and an usher will help you find a seat.",
-  },
-  {
-    title: "Bible Preaching",
-    body: "Hymn singing, special music, and clear preaching straight from the Bible, followed by an invitation for anyone who'd like prayer.",
-  },
-  {
-    title: "Come As You Are",
-    body: "There's no dress code at Liberty.",
-  },
-  {
-    title: "For Children",
-    body: "Nursery is available for ages 2 and under. Children are dismissed to Junior Church after the music portion of the morning service and may be picked up in the Education Building afterward.",
-  },
-];
-
 export default function ServiceTimes() {
   return (
     <section id="services" className="py-24 md:py-28 bg-cream">
