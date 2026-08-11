@@ -1,5 +1,5 @@
 import AnimateOnScroll from "./AnimateOnScroll";
-import PlanVisitModal from "./PlanVisitModal";
+import Link from "next/link";
 
 const services = [
   {
