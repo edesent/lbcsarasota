@@ -68,7 +68,6 @@ export default function Home() {
         <Connect />
         <Missions />
         <LifeAtLiberty />
-        <Academy />
       </main>
       <Footer />
     </>
