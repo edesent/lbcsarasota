@@ -81,28 +81,11 @@ export default function ServiceTimes() {
           </AnimateOnScroll>
         </div>
 
-        {/* What to expect — compact supporting row */}
         <AnimateOnScroll delay={200}>
-          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-6 rounded-2xl border border-cream-dark bg-warm-white px-8 py-9">
-            {expectations.map((item, i) => (
-              <div key={item.title} className="flex gap-4">
-                <span className="flex-shrink-0 w-9 h-9 rounded-full bg-gold/20 flex items-center justify-center text-gold-dark font-serif font-bold">
-                  {i + 1}
-                </span>
-                <div>
-                  <h3 className="font-serif text-lg font-semibold text-text-dark leading-tight">
-                    {item.title}
-                  </h3>
-                  <p className="text-sm text-text-body leading-relaxed mt-1">{item.body}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </AnimateOnScroll>
-
-        <AnimateOnScroll delay={300}>
-          <div className="text-center mt-12">
-            <PlanVisitModal variant="primary" className="px-9 py-3.5" label="Let Us Know You’re Coming" />
+          <div className="text-center mt-10">
+            <Link href="/plan-your-visit" className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-9 py-3.5 rounded-full hover:bg-brown hover:-translate-y-0.5 hover:shadow-lg transition-all">
+              What to Expect on Your First Visit
+            </Link>
           </div>
         </AnimateOnScroll>
       </div>
