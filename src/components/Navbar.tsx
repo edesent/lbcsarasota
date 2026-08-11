@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import PlanVisitModal from "./PlanVisitModal";
 
 const navLinks = [
   { href: "/about-us", label: "About" },
