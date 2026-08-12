@@ -9,6 +9,21 @@ export const metadata: Metadata = {
   description:
     "Learn more about Liberty Baptist Academy in Sarasota, Florida — a distinctly Christian school ministry of Liberty Baptist Church with A.C.E. academics, Biblical instruction, Hawks athletics, and Step Up For Students scholarship participation.",
   alternates: { canonical: "/academy" },
+  openGraph: {
+    title: "Liberty Baptist Academy | Christian School in Sarasota",
+    description:
+      "A distinctly Christian school ministry of Liberty Baptist Church with A.C.E. academics, Biblical instruction, Hawks athletics, and Step Up For Students scholarship participation.",
+    url: "/academy",
+    type: "website",
+    images: [
+      {
+        url: "/academy-student-assembly.jpg",
+        width: 1200,
+        height: 900,
+        alt: "Liberty Baptist Academy students gathered for a school assembly",
+      },
+    ],
+  },
 };
 
 const highlights = [
@@ -38,6 +53,24 @@ const highlights = [
   },
 ];
 
+const photoMoments = [
+  {
+    src: "/academy-student-assembly.jpg",
+    alt: "Liberty Baptist Academy students gathered for a school assembly",
+    label: "School Community",
+  },
+  {
+    src: "/academy-hawks-champions.jpg",
+    alt: "Liberty Baptist Academy Hawks players with trophies",
+    label: "Hawks Athletics",
+  },
+  {
+    src: "/academy-back-to-school.jpg",
+    alt: "Welcome back to school display at Liberty Baptist Academy",
+    label: "Back to School",
+  },
+];
+
 export default function AcademyPage() {
   return (
     <>
@@ -47,6 +80,7 @@ export default function AcademyPage() {
           eyebrow="Christian Education"
           title="Liberty Baptist Academy"
           subtitle="A distinctly Christian education where students are known, challenged, and encouraged to grow academically and spiritually."
+          bgImage="/academy-student-assembly.jpg"
         />
 
         <section className="py-20 md:py-24 bg-warm-white">
@@ -101,6 +135,40 @@ export default function AcademyPage() {
                   </h3>
                   <p className="text-text-body leading-relaxed">{item.body}</p>
                 </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 md:py-24 bg-warm-white">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="max-w-3xl mb-10">
+              <p className="text-xs font-bold tracking-[0.2em] uppercase text-gold-dark mb-3">
+                Life at LBA
+              </p>
+              <h2 className="font-serif text-3xl md:text-5xl font-bold text-text-dark leading-tight">
+                Real school days, real students, real community.
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-5">
+              {photoMoments.map((photo) => (
+                <figure
+                  key={photo.src}
+                  className="group relative min-h-72 md:min-h-96 overflow-hidden rounded-2xl bg-brown-deep shadow-sm"
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-brown-deep/90 to-transparent px-5 pb-5 pt-16">
+                    <p className="text-sm font-bold tracking-[0.16em] uppercase text-white">
+                      {photo.label}
+                    </p>
+                  </figcaption>
+                </figure>
               ))}
             </div>
           </div>
