@@ -3,7 +3,7 @@
 import Script from "next/script";
 import { CHAT } from "@/config/chat";
 
-// The chat bubble greets visitors with "Have a Question for Pastor Aiken?".
+// The chat bubble greets visitors with "Have a question for us?".
 // The widget shows it once per visitor: never for someone with a live thread,
 // and not again for 14 days after they close the bubble.
 
@@ -13,7 +13,7 @@ export default function ChatWidget() {
       src={`${CHAT.origin}/widget/wbc-chat.js`}
       data-api={CHAT.origin}
       data-key={CHAT.apiKey}
-      data-greeting-message="Have a Question for Pastor Aiken?"
+      data-greeting-message="Have a question for us?"
       data-dismiss-days="14"
       strategy="afterInteractive"
     />
