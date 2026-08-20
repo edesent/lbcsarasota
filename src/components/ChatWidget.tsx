@@ -14,7 +14,6 @@ export default function ChatWidget() {
       data-api={CHAT.origin}
       data-key={CHAT.apiKey}
       data-greeting-message="Have a Question for Pastor Aiken?"
-      data-agent-icon-url="/pastor-avatar.jpg"
       data-dismiss-days="14"
       strategy="afterInteractive"
     />
