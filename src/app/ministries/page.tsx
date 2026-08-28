@@ -66,7 +66,7 @@ const ministries: Ministry[] = [
     photo: "/2026-05-22-09-15-00.jpeg",
     alt: "Students at Liberty Baptist Academy",
     body: "Liberty Baptist Academy is a ministry of Liberty Baptist Church serving families who desire a distinctly Christian education. Our school combines individual academic progress with Biblical instruction, character development, and a caring school community.",
-    internal: { href: "/academy", label: "Explore the Academy" },
+    internal: { href: "https://lbasarasota.com", label: "Explore the Academy" },
   },
   {
     title: "Church Family & Outreach",
