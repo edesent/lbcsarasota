@@ -103,7 +103,7 @@ export default function AboutUsPage() {
           </div>
           <div className="max-w-4xl mx-auto px-6 mt-10 text-center flex flex-wrap justify-center gap-4">
             <Link href="/statement-of-faith" className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full hover:bg-brown transition-all">What We Believe</Link>
-            <Link href="/academy" className="inline-block text-brown-light font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light/40 hover:border-brown-light transition-all">Liberty Baptist Academy</Link>
+            <Link href="https://lbasarasota.com" className="inline-block text-brown-light font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light/40 hover:border-brown-light transition-all">Liberty Baptist Academy</Link>
             <Link href="/#services" className="inline-block text-brown-light font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light/40 hover:border-brown-light transition-all">Plan Your Visit</Link>
           </div>
         </section>
