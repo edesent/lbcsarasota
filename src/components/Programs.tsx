@@ -54,7 +54,13 @@ export default function Programs() {
                   {program.eyebrow}
                 </p>
                 <h3 className="font-serif text-xl font-semibold text-text-dark mb-3 leading-tight">
-                  {program.title}
+                  {program.title === "Liberty Baptist Academy" ? (
+                    <Link href="https://lbasarasota.com" className="hover:text-brown-light transition-colors">
+                      {program.title}
+                    </Link>
+                  ) : (
+                    program.title
+                  )}
                 </h3>
                 <p className="text-sm text-text-body leading-relaxed">{program.detail}</p>
               </div>
