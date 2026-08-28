@@ -66,7 +66,7 @@ export default function Academy() {
 
               <div className="text-center">
                 <a
-                  href="/academy"
+                  href="https://lbasarasota.com"
                   className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full border-2 border-brown-light hover:bg-brown hover:border-brown hover:-translate-y-0.5 hover:shadow-lg transition-all"
                 >
                   Learn More
