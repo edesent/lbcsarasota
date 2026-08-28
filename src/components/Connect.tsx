@@ -72,7 +72,13 @@ export default function Connect() {
                 </div>
                 <div className="p-7">
                   <h3 className="font-serif text-xl font-semibold text-text-dark mb-2 leading-tight">
-                    {ministry.label}
+                    {ministry.label === "Liberty Baptist Academy" ? (
+                      <Link href="https://lbasarasota.com" className="hover:text-brown-light transition-colors">
+                        {ministry.label}
+                      </Link>
+                    ) : (
+                      ministry.label
+                    )}
                   </h3>
                   <p className="text-sm text-text-body leading-relaxed">{ministry.detail}</p>
                 </div>
