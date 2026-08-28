@@ -7,7 +7,7 @@ const navLinks = [
   { href: "/about-us", label: "About" },
   { href: "#services", label: "Visit" },
   { href: "/ministries", label: "Programs & Ministries" },
-  { href: "/academy", label: "Academy" },
+  { href: "https://lbasarasota.com", label: "Academy" },
   { href: "/events", label: "Events" },
   { href: "/messages", label: "Sermons" },
   { href: "/give", label: "Give" },
