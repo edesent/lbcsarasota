@@ -23,6 +23,23 @@ export const metadata: Metadata = {
 // Leave it "" to show the schedule lists below.
 const GCAL_EMBED_SRC = "";
 
+const septemberEvents: ChurchEvent[] = [
+  { when: "Wednesday, September 2", title: "Deacons’ Meeting", detail: "Dinner at 6:00 PM; LBA Fundraiser" },
+  { when: "Friday, September 4", title: "Couples Retreat", detail: "Orlando" },
+  { when: "Saturday, September 5", title: "Outreach", detail: "9:30 AM" },
+  { when: "Sunday, September 6", title: "Communion" },
+  { when: "Wednesday, September 9", title: "LBA Fundraiser", detail: "Dinner at 6:00 PM" },
+  { when: "Saturday, September 12", title: "Outreach", detail: "9:30 AM" },
+  { when: "Sunday, September 13", title: "Church Anniversary / Friend Day" },
+  { when: "Wednesday, September 16", title: "Church Meeting", detail: "Dinner at 6:00 PM; LBA Fundraiser" },
+  { when: "Saturday, September 19", title: "Outreach", detail: "9:30 AM" },
+  { when: "Sunday, September 20", title: "First Trunk or Treat Meeting" },
+  { when: "Wednesday, September 23", title: "LBA Fundraiser", detail: "Dinner at 6:00 PM" },
+  { when: "Thursday, September 24", title: "Set Up Flags for Mission Month", detail: "10:00 AM" },
+  { when: "Saturday, September 26", title: "Outreach", detail: "9:30 AM" },
+  { when: "Wednesday, September 30", title: "Missionary Mark Reichard", detail: "Dinner at 6:00 PM; Fellowship following; LBA Fundraiser" },
+];
+
 function EventList({ items }: { items: ChurchEvent[] }) {
   return (
     <div className="divide-y divide-cream-dark border-y border-cream-dark">
