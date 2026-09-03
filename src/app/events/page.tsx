@@ -72,11 +72,13 @@ export default function EventsPage() {
     <>
       <Navbar />
       <main>
-        <SubpageHero
-          eyebrow="Calendar"
-          title="Church Calendar"
-          subtitle="The rhythm of life together at Liberty Baptist Church"
-        />
+        <div className="bg-blue overflow-hidden">
+          <img
+            src="/events/cb1c9990-fc72-4144-b8ae-43129a92665f.png"
+            alt="Liberty Baptist Church Events"
+            className="w-full h-auto block"
+          />
+        </div>
 
         <section className="py-24 bg-warm-white">
           <div className="max-w-5xl mx-auto px-6">
