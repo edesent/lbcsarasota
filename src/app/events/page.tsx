@@ -14,6 +14,13 @@ export const metadata: Metadata = {
     description: "Weekly gatherings and ministries at Liberty Baptist Church.",
     url: "/events",
     type: "website",
+    images: ["/events/cb1c9990-fc72-4144-b8ae-43129a92665f.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Church Calendar | Liberty Baptist Church",
+    description: "Weekly gatherings and ministries at Liberty Baptist Church.",
+    images: ["/events/cb1c9990-fc72-4144-b8ae-43129a92665f.png"],
   },
 };
 
