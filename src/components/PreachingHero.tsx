@@ -7,7 +7,6 @@ const heroImages = [
   "/hero-slides/2026-07-12-10-18-20-1.jpeg",
   "/hero-slides/img-1855.jpeg",
   "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/EsS02eUUUxWJskJazILwtuvl2Bkfj-3s/2026-07-12%2010.08.53-1-asmmygyQdcwggQYREGvV7A8rI7hm7w.jpeg",
-  "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/0JJIvsjivFhU70icl_mWV6Anl8RtOyoc/2026-07-12%2012.36.40-1-DFWVx807EX20I9ycobOkunwzQi02K1.jpeg",
   "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/p3nQSZblftAgjRsJllI9guU-Sb_yiYt-/2026-07-19%2008.26.20-cqPsVYrUcfTsUiHrG7bQEL8Yb2m7fJ.jpeg",
 ];
 
