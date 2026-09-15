@@ -108,6 +108,27 @@ export default function AboutUsPage() {
                 </div>
               </div>
             </div>
+
+            <div className="mt-14 md:mt-16 max-w-5xl mx-auto">
+              <div className="text-center max-w-3xl mx-auto mb-7">
+                <span className="text-xs font-bold tracking-[0.2em] uppercase text-gold-dark">Honoring a Faithful Ministry</span>
+                <h3 className="font-serif text-2xl md:text-3xl font-bold text-text-dark mt-3 mb-3">Dr. Gary R. Jackson Retirement Celebration</h3>
+                <p className="text-text-body leading-relaxed">
+                  Watch Liberty Baptist Church honor Dr. Jackson&rsquo;s nearly five decades of faithful ministry during our 48th Anniversary Sunday celebration.
+                </p>
+              </div>
+              <div className="rounded-[1.5rem] bg-cream p-2.5 md:p-4 shadow-xl border border-cream-dark">
+                <div className="aspect-video rounded-[1rem] overflow-hidden bg-black shadow-inner">
+                  <iframe
+                    className="w-full h-full"
+                    src="https://www.youtube.com/embed/If5fzkqq-fk"
+                    title="Dr. Gary R. Jackson Retirement Celebration | Jeremy Rowland | 48th Anniversary Sunday"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
