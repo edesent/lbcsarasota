@@ -76,8 +76,26 @@ export default function AboutUsPage() {
                   The Aikens have two children and love pouring their lives into the church family. Together they are committed to continuing Liberty&rsquo;s legacy as a Bible-preaching church with a compassionate vision to reach the world.
                 </p>
               </div>
-              <div className="flex flex-wrap gap-4">
-                <a href="https://www.youtube.com/live/r-dA5-_uios?is=fFISt2HcjX_A2VpH" target="_blank" rel="noreferrer" className="inline-block bg-brown-light text-white font-semibold text-sm tracking-wide uppercase px-8 py-3.5 rounded-full hover:bg-brown transition-all">Watch Installation Service</a>
+            </div>
+          </div>
+
+          <div className="max-w-5xl mx-auto px-6 mt-14 md:mt-16">
+            <div className="text-center max-w-3xl mx-auto mb-7">
+              <span className="text-xs font-bold tracking-[0.2em] uppercase text-gold-dark">A New Chapter at Liberty</span>
+              <h3 className="font-serif text-2xl md:text-3xl font-bold text-text-dark mt-3 mb-3">Installation Service of Pastor Anthony Aiken</h3>
+              <p className="text-text-body leading-relaxed">
+                Watch the July 12, 2026 installation service as Liberty Baptist Church welcomed Pastor Anthony Aiken as pastor.
+              </p>
+            </div>
+            <div className="rounded-[1.5rem] bg-warm-white p-2.5 md:p-4 shadow-xl border border-cream-dark">
+              <div className="aspect-video rounded-[1rem] overflow-hidden bg-black shadow-inner">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/r-dA5-_uios"
+                  title="Installation Service of Pastor Anthony Aiken | 07/12/26 Sunday Morning Worship Service"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
               </div>
             </div>
           </div>
