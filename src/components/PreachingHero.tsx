@@ -8,8 +8,8 @@ export default function PreachingHero() {
       <div className="absolute inset-0 z-0 bg-brown-deep">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/sanctuary.jpg"
-          alt="Worship at Liberty Baptist Church in Sarasota"
+          src="/img-1869.jpeg"
+          alt="Liberty Baptist Church in Sarasota"
           className="w-full h-full object-cover"
         />
       </div>
