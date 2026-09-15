@@ -22,16 +22,25 @@ export default function AboutUsPage() {
           subtitle="Honoring God's faithfulness in the past and looking forward to what He will continue to do"
         />
 
-        <section className="py-12 md:py-16 bg-warm-white">
+        <section className="py-16 md:py-20 bg-warm-white">
           <div className="max-w-5xl mx-auto px-6">
-            <div className="aspect-video rounded-2xl overflow-hidden shadow-xl bg-black">
-              <iframe
-                className="w-full h-full"
-                src="https://www.youtube.com/embed/uSKXJ5-vETA"
-                title="48th Anniversary Celebration Slideshow | Liberty Baptist Church of Sarasota, Florida"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowFullScreen
-              />
+            <div className="text-center max-w-3xl mx-auto mb-9 md:mb-11">
+              <span className="text-xs font-bold tracking-[0.2em] uppercase text-gold-dark">Celebrating God&rsquo;s Faithfulness</span>
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mt-3 mb-4">48 Years of Liberty Baptist Church</h2>
+              <p className="text-lg text-text-body leading-relaxed">
+                Take a look back at nearly five decades of ministry, memories, and God&rsquo;s faithfulness to the Liberty Baptist Church family.
+              </p>
+            </div>
+            <div className="rounded-[1.5rem] bg-cream p-2.5 md:p-4 shadow-xl border border-cream-dark">
+              <div className="aspect-video rounded-[1rem] overflow-hidden bg-black shadow-inner">
+                <iframe
+                  className="w-full h-full"
+                  src="https://www.youtube.com/embed/uSKXJ5-vETA"
+                  title="48th Anniversary Celebration Slideshow | Liberty Baptist Church of Sarasota, Florida"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                />
+              </div>
             </div>
           </div>
         </section>
