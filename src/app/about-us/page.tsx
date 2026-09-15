@@ -146,6 +146,26 @@ export default function AboutUsPage() {
                   />
                 </div>
               </div>
+
+              <div className="mt-10 md:mt-12">
+                <div className="text-center max-w-3xl mx-auto mb-7">
+                  <h3 className="font-serif text-2xl md:text-3xl font-bold text-text-dark mb-3">Dr. Gary R. Jackson Retirement Celebration | Dr. Don Strange</h3>
+                  <p className="text-text-body leading-relaxed">
+                    Watch this special message from Dr. Don Strange honoring Dr. Jackson during Liberty&rsquo;s 48th Anniversary Sunday retirement celebration.
+                  </p>
+                </div>
+                <div className="rounded-[1.5rem] bg-cream p-2.5 md:p-4 shadow-xl border border-cream-dark">
+                  <div className="aspect-video rounded-[1rem] overflow-hidden bg-black shadow-inner">
+                    <iframe
+                      className="w-full h-full"
+                      src="https://www.youtube.com/embed/Xsf3qlqgWBA"
+                      title="09/13/26 Dr. Gary R. Jackson Retirement Celebration | Dr. Don Strange"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
