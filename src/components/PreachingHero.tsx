@@ -1,4 +1,28 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
+const heroImages = [
+  "/img-1869.jpeg",
+  "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/Qh4Fsf9nB8_N5ncIbYhW8Naff5IQ_qdv/2026-07-12%2010.11.42-1-XnrbYPWpP3arkaOUjdAAxKpfGF8VD2.jpeg",
+  "/hero-slides/2026-07-12-10-18-20-1.jpeg",
+  "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/BXC3NeQnaCdG25uZtVwE8Vyd89F_cY3x/IMG_1792-3QrDbtBcUZUO9zQKh5HYibT0HwtYDE.jpeg",
+  "/hero-slides/img-1853.jpeg",
+  "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/0JJIvsjivFhU70icl_mWV6Anl8RtOyoc/2026-07-12%2012.36.40-1-DFWVx807EX20I9ycobOkunwzQi02K1.jpeg",
+  "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/p3nQSZblftAgjRsJllI9guU-Sb_yiYt-/2026-07-19%2008.26.20-cqPsVYrUcfTsUiHrG7bQEL8Yb2m7fJ.jpeg",
+];
+
 export default function PreachingHero() {
+  const [activeImage, setActiveImage] = useState(0);
+
+  useEffect(() => {
+    const interval = window.setInterval(() => {
+      setActiveImage((current) => (current + 1) % heroImages.length);
+    }, 6500);
+
+    return () => window.clearInterval(interval);
+  }, []);
+
   return (
     <header
       id="home"
