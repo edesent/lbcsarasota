@@ -47,20 +47,20 @@ export default function SignatureEvents() {
 
               <div className="p-9 md:p-14 flex flex-col justify-center">
                 <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-gold-light mb-4">
-                  Sunday, September 13 · 10:00 AM
+                  Sunday, October 25
                 </span>
                 <h3 className="font-serif text-3xl md:text-5xl font-bold text-white leading-tight mb-3">
-                  Anniversary Sunday &amp; Friend Day
+                  Trunk or Treat
                 </h3>
                 <p className="font-serif text-xl md:text-2xl italic text-gold-light mb-5">
-                  Celebrating 48 Years of God&rsquo;s Faithfulness
+                  A Fun Fall Evening for the Whole Family
                 </p>
                 <p className="text-white/78 leading-relaxed mb-7 max-w-2xl">
-                  Join us as we celebrate Liberty Baptist Church&rsquo;s 48th anniversary, welcome friends from our community, and honor the faithful ministry of our founding pastor, Dr. Gary Jackson. We&rsquo;ll enjoy a special morning of worship, preaching, memories, and fellowship together.
+                  Bring the family to Liberty Baptist Church for Trunk or Treat! Enjoy decorated trunks, plenty of candy, and a fun evening together with families from our church and community.
                 </p>
                 <div className="flex flex-wrap gap-3 text-sm text-white/80 mb-8">
-                  <span className="rounded-full border border-white/20 px-4 py-2">Special Service</span>
-                  <span className="rounded-full border border-white/20 px-4 py-2">10:00 AM</span>
+                  <span className="rounded-full border border-white/20 px-4 py-2">October 25</span>
+                  <span className="rounded-full border border-white/20 px-4 py-2">Family Event</span>
                   <span className="rounded-full border border-white/20 px-4 py-2">Sarasota, Florida</span>
                 </div>
                 <a
