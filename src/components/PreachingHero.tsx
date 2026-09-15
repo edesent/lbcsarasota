@@ -16,9 +16,11 @@ export default function PreachingHero() {
   const [activeImage, setActiveImage] = useState(0);
 
   useEffect(() => {
+    setActiveImage(Math.floor(Math.random() * heroImages.length));
+
     const interval = window.setInterval(() => {
       setActiveImage((current) => (current + 1) % heroImages.length);
-    }, 6500);
+    }, 4500);
 
     return () => window.clearInterval(interval);
   }, []);
