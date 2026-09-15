@@ -30,22 +30,34 @@ export const metadata: Metadata = {
 // Leave it "" to show the schedule lists below.
 const GCAL_EMBED_SRC = "";
 
-const septemberEvents: ChurchEvent[] = [
-  { when: "Wednesday, September 2", title: "Deacons’ Meeting", detail: "Dinner at 6:00 PM; LBA Fundraiser" },
-  { when: "Friday, September 4", title: "Couples Retreat", detail: "Orlando" },
-  { when: "Saturday, September 5", title: "Outreach", detail: "9:30 AM" },
-  { when: "Sunday, September 6", title: "Communion" },
-  { when: "Wednesday, September 9", title: "LBA Fundraiser", detail: "Dinner at 6:00 PM" },
-  { when: "Saturday, September 12", title: "Outreach", detail: "9:30 AM" },
-  { when: "Sunday, September 13", title: "Church Anniversary / Friend Day" },
-  { when: "Wednesday, September 16", title: "Church Meeting", detail: "Dinner at 6:00 PM; LBA Fundraiser" },
-  { when: "Saturday, September 19", title: "Outreach", detail: "9:30 AM" },
-  { when: "Sunday, September 20", title: "First Trunk or Treat Meeting" },
-  { when: "Wednesday, September 23", title: "LBA Fundraiser", detail: "Dinner at 6:00 PM" },
-  { when: "Thursday, September 24", title: "Set Up Flags for Mission Month", detail: "10:00 AM" },
-  { when: "Saturday, September 26", title: "Outreach", detail: "9:30 AM" },
-  { when: "Wednesday, September 30", title: "Missionary Mark Reichard", detail: "Dinner at 6:00 PM; Fellowship following; LBA Fundraiser" },
+const septemberEvents: (ChurchEvent & { date: string })[] = [
+  { date: "2026-09-02", when: "Wednesday, September 2", title: "Deacons’ Meeting", detail: "Dinner at 6:00 PM; LBA Fundraiser" },
+  { date: "2026-09-04", when: "Friday, September 4", title: "Couples Retreat", detail: "Orlando" },
+  { date: "2026-09-05", when: "Saturday, September 5", title: "Outreach", detail: "9:30 AM" },
+  { date: "2026-09-06", when: "Sunday, September 6", title: "Communion" },
+  { date: "2026-09-09", when: "Wednesday, September 9", title: "LBA Fundraiser", detail: "Dinner at 6:00 PM" },
+  { date: "2026-09-12", when: "Saturday, September 12", title: "Outreach", detail: "9:30 AM" },
+  { date: "2026-09-13", when: "Sunday, September 13", title: "Church Anniversary / Friend Day" },
+  { date: "2026-09-16", when: "Wednesday, September 16", title: "Church Meeting", detail: "Dinner at 6:00 PM; LBA Fundraiser" },
+  { date: "2026-09-19", when: "Saturday, September 19", title: "Outreach", detail: "9:30 AM" },
+  { date: "2026-09-20", when: "Sunday, September 20", title: "First Trunk or Treat Meeting" },
+  { date: "2026-09-23", when: "Wednesday, September 23", title: "LBA Fundraiser", detail: "Dinner at 6:00 PM" },
+  { date: "2026-09-24", when: "Thursday, September 24", title: "Set Up Flags for Mission Month", detail: "10:00 AM" },
+  { date: "2026-09-26", when: "Saturday, September 26", title: "Outreach", detail: "9:30 AM" },
+  { date: "2026-09-30", when: "Wednesday, September 30", title: "Missionary Mark Reichard", detail: "Dinner at 6:00 PM; Fellowship following; LBA Fundraiser" },
 ];
+
+function getUpcomingEvents<T extends ChurchEvent & { date: string }>(events: T[]) {
+  const today = new Date();
+  const easternToday = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/New_York",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).format(today);
+
+  return events.filter((event) => event.date >= easternToday);
+}
 
 function EventList({ items }: { items: ChurchEvent[] }) {
   return (
