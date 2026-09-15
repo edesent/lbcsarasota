@@ -28,14 +28,19 @@ export default function PreachingHero() {
       id="home"
       className="relative min-h-[calc(100vh+5rem)] md:min-h-[calc(100vh+8rem)] flex items-center justify-start overflow-hidden"
     >
-      {/* Background — our sanctuary on a Sunday morning */}
+      {/* Background slideshow — text and overlays remain stationary */}
       <div className="absolute inset-0 z-0 bg-brown-deep">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/img-1869.jpeg"
-          alt="Liberty Baptist Church in Sarasota"
-          className="w-full h-full object-cover"
-        />
+        {heroImages.map((src, index) => (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            key={src}
+            src={src}
+            alt="Liberty Baptist Church in Sarasota"
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${
+              index === activeImage ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
       </div>
 
       {/* Navy overlays — darker on the left for legible text, lighter on the
