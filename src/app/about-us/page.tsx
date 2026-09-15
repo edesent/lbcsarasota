@@ -22,6 +22,20 @@ export default function AboutUsPage() {
           subtitle="Honoring God's faithfulness in the past and looking forward to what He will continue to do"
         />
 
+        <section className="py-12 md:py-16 bg-warm-white">
+          <div className="max-w-5xl mx-auto px-6">
+            <div className="aspect-video rounded-2xl overflow-hidden shadow-xl bg-black">
+              <iframe
+                className="w-full h-full"
+                src="https://www.youtube.com/embed/uSKXJ5-vETA"
+                title="48th Anniversary Celebration Slideshow | Liberty Baptist Church of Sarasota, Florida"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 md:py-24 bg-warm-white">
           <div className="max-w-4xl mx-auto px-6 space-y-6 text-lg text-text-body leading-relaxed">
             <p>
