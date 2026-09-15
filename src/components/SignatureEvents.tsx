@@ -38,8 +38,8 @@ export default function SignatureEvents() {
               <div className="relative min-h-[320px] lg:min-h-[470px] overflow-hidden bg-brown-deep">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/2026-07-12-21-34-45.jpeg"
-                  alt="Anniversary Sunday and Friend Day at Liberty Baptist Church"
+                  src="/events/2026-06-22-12-06-27.jpeg"
+                  alt="Trunk or Treat at Liberty Baptist Church"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brown-deep/65 via-brown-deep/10 to-transparent" />
