@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 
 const heroImages = [
-  "/img-1869.jpeg",
   "https://o3hectmev11nr3rl.public.blob.vercel-storage.com/church-uploads/Qh4Fsf9nB8_N5ncIbYhW8Naff5IQ_qdv/2026-07-12%2010.11.42-1-XnrbYPWpP3arkaOUjdAAxKpfGF8VD2.jpeg",
   "/hero-slides/2026-07-12-10-18-20-1.jpeg",
   "/hero-slides/img-1855.jpeg",
