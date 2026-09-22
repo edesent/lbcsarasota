@@ -30,21 +30,24 @@ export const metadata: Metadata = {
 // Leave it "" to show the schedule lists below.
 const GCAL_EMBED_SRC = "";
 
-const septemberEvents: (ChurchEvent & { date: string })[] = [
-  { date: "2026-09-02", when: "Wednesday, September 2", title: "Deacons’ Meeting", detail: "Dinner at 6:00 PM; LBA Fundraiser" },
-  { date: "2026-09-04", when: "Friday, September 4", title: "Couples Retreat", detail: "Orlando" },
-  { date: "2026-09-05", when: "Saturday, September 5", title: "Outreach", detail: "9:30 AM" },
-  { date: "2026-09-06", when: "Sunday, September 6", title: "Communion" },
-  { date: "2026-09-09", when: "Wednesday, September 9", title: "LBA Fundraiser", detail: "Dinner at 6:00 PM" },
-  { date: "2026-09-12", when: "Saturday, September 12", title: "Outreach", detail: "9:30 AM" },
-  { date: "2026-09-13", when: "Sunday, September 13", title: "Church Anniversary / Friend Day" },
-  { date: "2026-09-16", when: "Wednesday, September 16", title: "Church Meeting", detail: "Dinner at 6:00 PM; LBA Fundraiser" },
-  { date: "2026-09-19", when: "Saturday, September 19", title: "Outreach", detail: "9:30 AM" },
-  { date: "2026-09-20", when: "Sunday, September 20", title: "First Trunk or Treat Meeting" },
-  { date: "2026-09-23", when: "Wednesday, September 23", title: "LBA Fundraiser", detail: "Dinner at 6:00 PM" },
-  { date: "2026-09-24", when: "Thursday, September 24", title: "Set Up Flags for Mission Month", detail: "10:00 AM" },
-  { date: "2026-09-26", when: "Saturday, September 26", title: "Outreach", detail: "9:30 AM" },
-  { date: "2026-09-30", when: "Wednesday, September 30", title: "Missionary Mark Reichard", detail: "Dinner at 6:00 PM; Fellowship following; LBA Fundraiser" },
+const octoberEvents: (ChurchEvent & { date: string })[] = [
+  { date: "2026-10-03", when: "Saturday, October 3", title: "Outreach Ministry", detail: "9:30 AM" },
+  { date: "2026-10-04", when: "Sunday, October 4", title: "Mission Conference", detail: "Evangelist Mike Pelletier; Potluck Missions Breakfast at 9:00 AM" },
+  { date: "2026-10-06", when: "Tuesday, October 6", title: "LBA Away Game vs. Sarasota Heat", detail: "4:00 PM" },
+  { date: "2026-10-07", when: "Wednesday, October 7", title: "Missionary John Gardner — Amazing Grace Mission", detail: "Dinner at 5:30 PM; LBA Fundraiser; Deacons’ Meeting" },
+  { date: "2026-10-08", when: "Thursday, October 8", title: "LBA Chapel — Missionary John Gardner", detail: "11:30 AM" },
+  { date: "2026-10-10", when: "Saturday, October 10", title: "Outreach Ministry", detail: "9:30 AM" },
+  { date: "2026-10-11", when: "Sunday, October 11", title: "Mission Conference — Commitment Sunday", detail: "New missionary James Dare to the Military & Servicemen; International Potluck Luncheon" },
+  { date: "2026-10-14", when: "Wednesday, October 14", title: "Church Meeting", detail: "Dinner at 5:30 PM; LBA Fundraiser" },
+  { date: "2026-10-15", when: "Thursday, October 15", title: "LBA Chapel — Pensacola Christian College", detail: "11:30 AM" },
+  { date: "2026-10-16", when: "Friday, October 16", title: "LBA Away Game vs. Faith", detail: "4:00 PM" },
+  { date: "2026-10-17", when: "Saturday, October 17", title: "Outreach Ministry", detail: "9:30 AM" },
+  { date: "2026-10-21", when: "Wednesday, October 21", title: "Pastor Ethan Green Speaking", detail: "Dinner at 5:30 PM; LBA Fundraiser" },
+  { date: "2026-10-23", when: "Friday, October 23", title: "LBA Away Game vs. East Bay", detail: "4:00 PM" },
+  { date: "2026-10-24", when: "Saturday, October 24", title: "Outreach Ministry", detail: "9:30 AM" },
+  { date: "2026-10-25", when: "Sunday, October 25", title: "Outreach Ministry Trunk or Treat", detail: "4:30–6:30 PM" },
+  { date: "2026-10-28", when: "Wednesday, October 28", title: "LBA Fundraiser", detail: "Dinner at 5:30 PM" },
+  { date: "2026-10-31", when: "Saturday, October 31", title: "Outreach Ministry", detail: "9:30 AM; Birthday Party for Martha Jackson at Der Dutchman, 10:00 AM" },
 ];
 
 function getUpcomingEvents<T extends ChurchEvent & { date: string }>(events: T[]) {
