@@ -83,7 +83,7 @@ function EventList({ items }: { items: ChurchEvent[] }) {
 }
 
 export default function EventsPage() {
-  const upcomingSeptemberEvents = getUpcomingEvents(septemberEvents);
+  const upcomingOctoberEvents = getUpcomingEvents(octoberEvents);
 
   return (
     <>
