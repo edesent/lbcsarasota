@@ -111,9 +111,9 @@ export default function EventsPage() {
             ) : null}
 
             <h2 className="font-serif text-3xl font-bold text-text-dark mb-8">
-              September 2026 Events
+              October 2026 Events
             </h2>
-            <EventList items={upcomingSeptemberEvents} />
+            <EventList items={upcomingOctoberEvents} />
 
             <h2 className="font-serif text-3xl font-bold text-text-dark mt-16 mb-8">
               Weekly Gatherings
