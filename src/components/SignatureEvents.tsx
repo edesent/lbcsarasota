@@ -47,7 +47,7 @@ export default function SignatureEvents() {
 
               <div className="p-9 md:p-14 flex flex-col justify-center">
                 <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-gold-light mb-4">
-                  Sunday, October 25
+                  Sunday, October 25 · 4:30–6:30 PM
                 </span>
                 <h3 className="font-serif text-3xl md:text-5xl font-bold text-white leading-tight mb-3">
                   Trunk or Treat
