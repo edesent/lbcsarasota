@@ -110,8 +110,27 @@ export default function EventsPage() {
               </div>
             ) : null}
 
+            <div className="mb-16 overflow-hidden rounded-3xl border border-cream-dark bg-cream shadow-sm">
+              <img
+                src="/events/trunk-or-treat-2026.jpg"
+                alt="Trunk or Treat at Liberty Baptist Church — Sunday, October 25, 4:30–6:30 PM"
+                className="w-full h-auto block"
+              />
+              <div className="p-8 md:p-10">
+                <p className="text-xs font-bold tracking-[0.18em] uppercase text-gold-dark mb-2">
+                  Sunday, October 25 · 4:30–6:30 PM
+                </p>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mb-4">
+                  Trunk or Treat
+                </h2>
+                <p className="text-text-body leading-relaxed max-w-3xl">
+                  Looking for a fun Halloween alternative? Bring the family to Liberty Baptist Church for Trunk or Treat! Enjoy decorated trunks, plenty of candy, and a fun evening together with families from our church and community. Free to the public!
+                </p>
+              </div>
+            </div>
+
             <h2 className="font-serif text-3xl font-bold text-text-dark mb-8">
-              October 2026 Events
+              Other Upcoming Events
             </h2>
             <EventList items={upcomingOctoberEvents} />
 
