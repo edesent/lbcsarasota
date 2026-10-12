@@ -31,12 +31,6 @@ export const metadata: Metadata = {
 const GCAL_EMBED_SRC = "";
 
 const octoberEvents: (ChurchEvent & { date: string })[] = [
-  { date: "2026-10-03", when: "Saturday, October 3", title: "Outreach Ministry", detail: "9:30 AM" },
-  { date: "2026-10-04", when: "Sunday, October 4", title: "Mission Conference", detail: "Evangelist Mike Pelletier; Potluck Missions Breakfast at 9:00 AM" },
-  { date: "2026-10-06", when: "Tuesday, October 6", title: "LBA Away Game vs. Sarasota Heat", detail: "4:00 PM" },
-  { date: "2026-10-07", when: "Wednesday, October 7", title: "Missionary John Gardner — Amazing Grace Mission", detail: "Dinner at 5:30 PM; LBA Fundraiser; Deacons’ Meeting" },
-  { date: "2026-10-08", when: "Thursday, October 8", title: "LBA Chapel — Missionary John Gardner", detail: "11:30 AM" },
-  { date: "2026-10-10", when: "Saturday, October 10", title: "Outreach Ministry", detail: "9:30 AM" },
   { date: "2026-10-11", when: "Sunday, October 11", title: "Mission Conference — Commitment Sunday", detail: "New missionary James Dare to the Military & Servicemen; International Potluck Luncheon" },
   { date: "2026-10-14", when: "Wednesday, October 14", title: "Church Meeting", detail: "Dinner at 5:30 PM; LBA Fundraiser" },
   { date: "2026-10-15", when: "Thursday, October 15", title: "LBA Chapel — Pensacola Christian College", detail: "11:30 AM" },
