@@ -123,6 +123,44 @@ export default function EventsPage() {
               </div>
             </div>
 
+            <div className="mb-16 overflow-hidden rounded-3xl border border-cream-dark bg-cream shadow-sm">
+              <img
+                src="/events/att-svzzljavyg3z3pzckyuxtoclcafgvdtb-t6nfac7i40.jpeg"
+                alt="Kids 4 Truth Bible Character Night — Wednesday, October 28 at 7 PM"
+                className="w-full h-auto block"
+              />
+              <div className="p-8 md:p-10">
+                <p className="text-xs font-bold tracking-[0.18em] uppercase text-gold-dark mb-2">
+                  Wednesday, October 28 · 7:00 PM
+                </p>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mb-4">
+                  Bible Character Night
+                </h2>
+                <p className="text-text-body leading-relaxed max-w-3xl">
+                  Kids 4 Truth Bible Character Night! Children are invited to dress as a character from the Bible and win candy.
+                </p>
+              </div>
+            </div>
+
+            <div className="mb-16 overflow-hidden rounded-3xl border border-cream-dark bg-cream shadow-sm">
+              <img
+                src="/events/att-lasdiary62rrgqnz2mbjfvol-eypilbox7oc3b-fif0.jpeg"
+                alt="Thanksgiving Praise Service — Sunday, November 22 at 10 AM"
+                className="w-full h-auto block"
+              />
+              <div className="p-8 md:p-10">
+                <p className="text-xs font-bold tracking-[0.18em] uppercase text-gold-dark mb-2">
+                  Sunday, November 22 · 10:00 AM
+                </p>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mb-4">
+                  Thanksgiving Praise Service
+                </h2>
+                <p className="text-text-body leading-relaxed max-w-3xl">
+                  Join us for a special Thanksgiving Praise Service as we gather to give thanks and praise to God together.
+                </p>
+              </div>
+            </div>
+
             <h2 className="font-serif text-3xl font-bold text-text-dark mb-8">
               Other Upcoming Events
             </h2>
