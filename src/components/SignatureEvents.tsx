@@ -2,16 +2,9 @@ import Link from "next/link";
 import AnimateOnScroll from "./AnimateOnScroll";
 
 const upcomingEvents = [
-  {
-    label: "Missions Conference",
-    detail:
-      "A focused time to hear from missionaries, learn what God is doing around the world, and renew our commitment to the Great Commission.",
-  },
-  {
-    label: "The Liberty Car Show",
-    detail:
-      "Our annual community event brings classic cars, families, food, and neighbors together on the Liberty campus.",
-  },
+  { label: "Christmas Village Meeting", detail: "Sunday, November 15 — following the morning service." },
+  { label: "Outreach Ministry", detail: "Saturday, November 7 and 14 at 9:30 AM. No outreach November 21 or 28." },
+  { label: "Thanksgiving Week", detail: "No Wednesday service November 25; church office closed and LBA on Thanksgiving break November 23–27." },
 ];
 
 export default function SignatureEvents() {
@@ -38,8 +31,8 @@ export default function SignatureEvents() {
               <div className="relative min-h-[320px] lg:min-h-[470px] overflow-hidden bg-brown-deep">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/events/2026-06-22-12-06-27.jpeg"
-                  alt="Trunk or Treat at Liberty Baptist Church"
+                  src="/events/att-lasdiary62rrgqnz2mbjfvol-eypilbox7oc3b-fif0.jpeg"
+                  alt="Thanksgiving Praise Service at Liberty Baptist Church"
                   className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brown-deep/65 via-brown-deep/10 to-transparent" />
@@ -47,20 +40,20 @@ export default function SignatureEvents() {
 
               <div className="p-9 md:p-14 flex flex-col justify-center">
                 <span className="inline-block text-xs font-bold tracking-[0.2em] uppercase text-gold-light mb-4">
-                  Sunday, October 25 · 4:30–6:30 PM
+                  Sunday, November 22 · 10:00 AM
                 </span>
                 <h3 className="font-serif text-3xl md:text-5xl font-bold text-white leading-tight mb-3">
-                  Trunk or Treat
+                  Thanksgiving Praise Service
                 </h3>
                 <p className="font-serif text-xl md:text-2xl italic text-gold-light mb-5">
-                  A Fun Fall Evening for the Whole Family
+                  A Special Sunday of Thanksgiving
                 </p>
                 <p className="text-white/78 leading-relaxed mb-7 max-w-2xl">
-                  Bring the family to Liberty Baptist Church for Trunk or Treat! Enjoy decorated trunks, plenty of candy, and a fun evening together with families from our church and community.
+                  Join us for a special morning of praise and thanksgiving as we give thanks to God together. There will be no Small Groups that morning.
                 </p>
                 <div className="flex flex-wrap gap-3 text-sm text-white/80 mb-8">
-                  <span className="rounded-full border border-white/20 px-4 py-2">October 25</span>
-                  <span className="rounded-full border border-white/20 px-4 py-2">Family Event</span>
+                  <span className="rounded-full border border-white/20 px-4 py-2">November 22</span>
+                  <span className="rounded-full border border-white/20 px-4 py-2">10:00 AM</span>
                   <span className="rounded-full border border-white/20 px-4 py-2">Sarasota, Florida</span>
                 </div>
                 <a
