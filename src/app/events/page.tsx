@@ -30,20 +30,19 @@ export const metadata: Metadata = {
 // Leave it "" to show the schedule lists below.
 const GCAL_EMBED_SRC = "";
 
-const octoberEvents: (ChurchEvent & { date: string })[] = [
-  { date: "2026-10-11", when: "Sunday, October 11", title: "Mission Conference — Commitment Sunday", detail: "New missionary James Dare to the Military & Servicemen; International Potluck Luncheon" },
-  { date: "2026-10-14", when: "Wednesday, October 14", title: "Church Meeting", detail: "Dinner at 5:30 PM; LBA Fundraiser" },
-  { date: "2026-10-15", when: "Thursday, October 15", title: "LBA Chapel — Pensacola Christian College", detail: "11:30 AM" },
-  { date: "2026-10-16", when: "Friday, October 16", title: "LBA Away Game vs. Faith", detail: "4:00 PM" },
-  { date: "2026-10-17", when: "Saturday, October 17", title: "Outreach Ministry", detail: "9:30 AM" },
-  { date: "2026-10-21", when: "Wednesday, October 21", title: "Pastor Ethan Green Speaking", detail: "Dinner at 5:30 PM; LBA Fundraiser" },
-  { date: "2026-10-23", when: "Friday, October 23", title: "LBA Away Game vs. East Bay", detail: "4:00 PM" },
-  { date: "2026-10-24", when: "Saturday, October 24", title: "Outreach Ministry", detail: "9:30 AM" },
-  { date: "2026-10-25", when: "Sunday, October 25", title: "Outreach Ministry Trunk or Treat", detail: "4:30–6:30 PM" },
-  { date: "2026-10-28", when: "Wednesday, October 28", title: "LBA Fundraiser", detail: "Dinner at 5:30 PM" },
-  { date: "2026-10-31", when: "Saturday, October 31", title: "Outreach Ministry", detail: "9:30 AM; Birthday Party for Martha Jackson at Der Dutchman, 10:00 AM" },
+const novemberEvents: (ChurchEvent & { date: string })[] = [
+  { date: "2026-11-04", when: "Wednesday, November 4", title: "Deacons’ Meeting", detail: "Church leadership meeting" },
+  { date: "2026-11-07", when: "Saturday, November 7", title: "Hope Children’s Home Food Delivery", detail: "9:00 AM" },
+  { date: "2026-11-07", when: "Saturday, November 7", title: "Outreach Ministry", detail: "9:30 AM" },
+  { date: "2026-11-11", when: "Wednesday, November 11", title: "Deacons’ Meeting", detail: "Veterans Day" },
+  { date: "2026-11-14", when: "Saturday, November 14", title: "Outreach Ministry", detail: "9:30 AM" },
+  { date: "2026-11-15", when: "Sunday, November 15", title: "Christmas Village Meeting", detail: "Following the morning service" },
+  { date: "2026-11-18", when: "Wednesday, November 18", title: "Church Meeting", detail: "" },
+  { date: "2026-11-19", when: "Thursday, November 19", title: "Trustees’ Meeting", detail: "5:00 PM" },
+  { date: "2026-11-22", when: "Sunday, November 22", title: "Thanksgiving Praise Service", detail: "10:00 AM; no Small Groups" },
+  { date: "2026-11-25", when: "Wednesday, November 25", title: "No Wednesday Service", detail: "Thanksgiving week" },
+  { date: "2026-11-26", when: "Thursday, November 26", title: "Thanksgiving Day", detail: "" },
 ];
-
 function getUpcomingEvents<T extends ChurchEvent & { date: string }>(events: T[]) {
   const today = new Date();
   const easternToday = new Intl.DateTimeFormat("en-CA", {
@@ -77,7 +76,7 @@ function EventList({ items }: { items: ChurchEvent[] }) {
 }
 
 export default function EventsPage() {
-  const upcomingOctoberEvents = getUpcomingEvents(octoberEvents);
+  const upcomingNovemberEvents = getUpcomingEvents(novemberEvents);
 
   return (
     <>
@@ -106,65 +105,26 @@ export default function EventsPage() {
 
             <div className="mb-16 overflow-hidden rounded-3xl border border-cream-dark bg-cream shadow-sm">
               <img
-                src="/events/trunk-or-treat-2026.jpg"
-                alt="Trunk or Treat at Liberty Baptist Church — Sunday, October 25, 4:30–6:30 PM"
-                className="w-full h-auto block"
-              />
-              <div className="p-8 md:p-10">
-                <p className="text-xs font-bold tracking-[0.18em] uppercase text-gold-dark mb-2">
-                  Sunday, October 25 · 4:30–6:30 PM
-                </p>
-                <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mb-4">
-                  Trunk or Treat
-                </h2>
-                <p className="text-text-body leading-relaxed max-w-3xl">
-                  Looking for a fun Halloween alternative? Bring the family to Liberty Baptist Church for Trunk or Treat! Enjoy decorated trunks, plenty of candy, and a fun evening together with families from our church and community. Free to the public!
-                </p>
-              </div>
-            </div>
-
-            <div className="mb-16 overflow-hidden rounded-3xl border border-cream-dark bg-cream shadow-sm">
-              <img
-                src="/events/att-svzzljavyg3z3pzckyuxtoclcafgvdtb-t6nfac7i40.jpeg"
-                alt="Kids 4 Truth Bible Character Night — Wednesday, October 28 at 7 PM"
-                className="w-full h-auto block"
-              />
-              <div className="p-8 md:p-10">
-                <p className="text-xs font-bold tracking-[0.18em] uppercase text-gold-dark mb-2">
-                  Wednesday, October 28 · 7:00 PM
-                </p>
-                <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mb-4">
-                  Bible Character Night
-                </h2>
-                <p className="text-text-body leading-relaxed max-w-3xl">
-                  Kids 4 Truth Bible Character Night! Children are invited to dress as a character from the Bible and win candy.
-                </p>
-              </div>
-            </div>
-
-            <div className="mb-16 overflow-hidden rounded-3xl border border-cream-dark bg-cream shadow-sm">
-              <img
                 src="/events/att-lasdiary62rrgqnz2mbjfvol-eypilbox7oc3b-fif0.jpeg"
                 alt="Thanksgiving Praise Service — Sunday, November 22 at 10 AM"
                 className="w-full h-auto block"
               />
               <div className="p-8 md:p-10">
-                <p className="text-xs font-bold tracking-[0.18em] uppercase text-gold-dark mb-2">
-                  Sunday, November 22 · 10:00 AM
-                </p>
-                <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mb-4">
-                  Thanksgiving Praise Service
-                </h2>
-                <p className="text-text-body leading-relaxed max-w-3xl">
-                  Join us for a special Thanksgiving Praise Service as we gather to give thanks and praise to God together.
-                </p>
+                <p className="text-xs font-bold tracking-[0.18em] uppercase text-gold-dark mb-2">Sunday, November 22 · 10:00 AM</p>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-text-dark mb-4">Thanksgiving Praise Service</h2>
+                <p className="text-text-body leading-relaxed max-w-3xl">Join us as we give thanks and praise to God together. No Small Groups that morning.</p>
               </div>
+            </div>
+
+            <div className="mb-12 p-7 rounded-2xl border border-cream-dark bg-cream">
+              <h2 className="font-serif text-2xl font-bold text-text-dark mb-3">Thanksgiving Week Schedule</h2>
+              <p className="text-text-body leading-relaxed">No Wednesday service on November 25. The church office will be closed and Liberty Baptist Academy will be on Thanksgiving break November 23–27. There will be no Outreach Ministry on November 21 or 28.</p>
             </div>
 
             <h2 className="font-serif text-3xl font-bold text-text-dark mb-8">
               Other Upcoming Events
             </h2>
-            <EventList items={upcomingOctoberEvents} />
+            <EventList items={upcomingNovemberEvents} />
 
             <h2 className="font-serif text-3xl font-bold text-text-dark mt-16 mb-8">
               Weekly Gatherings
