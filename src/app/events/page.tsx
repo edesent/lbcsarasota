@@ -142,6 +142,11 @@ export default function EventsPage() {
               <p className="text-text-body leading-relaxed">No Wednesday service on November 25. The church office will be closed and Liberty Baptist Academy will be on Thanksgiving break November 23–27. There will be no Outreach Ministry on November 21 or 28.</p>
             </div>
 
+            <div className="mb-12 p-7 rounded-2xl border border-cream-dark bg-cream">
+              <h2 className="font-serif text-2xl font-bold text-text-dark mb-3">Christmas &amp; New Year Schedule</h2>
+              <p className="text-text-body leading-relaxed">The church office and Liberty Baptist Academy will be on Christmas break through January 5. There will be no Wednesday services on December 23 or 30, and no Outreach Ministry on December 19 or 26. December 20 and 27 will each have one Sunday service at 10:00 AM.</p>
+            </div>
+
             <h2 className="font-serif text-3xl font-bold text-text-dark mb-8">
               Other Upcoming Events
             </h2>
