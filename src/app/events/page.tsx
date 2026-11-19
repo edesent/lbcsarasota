@@ -97,7 +97,7 @@ function EventList({ items }: { items: ChurchEvent[] }) {
 }
 
 export default function EventsPage() {
-  const upcomingNovemberEvents = getUpcomingEvents(novemberEvents);
+  const upcomingEvents = getUpcomingEvents(allDatedEvents);
 
   return (
     <>
