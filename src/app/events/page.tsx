@@ -43,6 +43,27 @@ const novemberEvents: (ChurchEvent & { date: string })[] = [
   { date: "2026-11-25", when: "Wednesday, November 25", title: "No Wednesday Service", detail: "Thanksgiving week" },
   { date: "2026-11-26", when: "Thursday, November 26", title: "Thanksgiving Day", detail: "" },
 ];
+const decemberEvents: (ChurchEvent & { date: string })[] = [
+  { date: "2026-12-04", when: "Friday, December 4", title: "Teen Christmas Progressive Dinner", detail: "5:00–9:00 PM" },
+  { date: "2026-12-06", when: "Sunday, December 6", title: "Pastor & Alaina’s 12th Wedding Anniversary", detail: "" },
+  { date: "2026-12-09", when: "Wednesday, December 9", title: "Deacons’ Meeting", detail: "" },
+  { date: "2026-12-10", when: "Thursday, December 10", title: "Pastor Troy Masterson in LBA Chapel", detail: "11:30 AM" },
+  { date: "2026-12-12", when: "Saturday, December 12", title: "Outreach Ministry", detail: "9:30 AM" },
+  { date: "2026-12-13", when: "Sunday, December 13", title: "Christmas Village", detail: "5:30–7:30 PM" },
+  { date: "2026-12-16", when: "Wednesday, December 16", title: "Annual Church Meeting & Vote", detail: "" },
+  { date: "2026-12-18", when: "Friday, December 18", title: "LBA Half Day", detail: "" },
+  { date: "2026-12-18", when: "Friday, December 18", title: "Trustees’ Meeting", detail: "5:00 PM" },
+  { date: "2026-12-19", when: "Saturday, December 19", title: "No Outreach Ministry", detail: "" },
+  { date: "2026-12-20", when: "Sunday, December 20", title: "Christmas Service & Christmas Offering", detail: "One service at 10:00 AM" },
+  { date: "2026-12-22", when: "Tuesday, December 22", title: "Pastor & Martha’s 54th Wedding Anniversary", detail: "" },
+  { date: "2026-12-23", when: "Wednesday, December 23", title: "No Wednesday Service", detail: "" },
+  { date: "2026-12-24", when: "Thursday, December 24", title: "Christmas Eve Candlelight Service", detail: "5:00 PM" },
+  { date: "2026-12-26", when: "Saturday, December 26", title: "No Outreach Ministry", detail: "" },
+  { date: "2026-12-27", when: "Sunday, December 27", title: "New Year’s Service", detail: "One service at 10:00 AM" },
+  { date: "2026-12-30", when: "Wednesday, December 30", title: "No Wednesday Service", detail: "" },
+];
+const allDatedEvents = [...novemberEvents, ...decemberEvents];
+
 function getUpcomingEvents<T extends ChurchEvent & { date: string }>(events: T[]) {
   const today = new Date();
   const easternToday = new Intl.DateTimeFormat("en-CA", {
